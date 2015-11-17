@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper,oneside,twocolumn]{article} %type of the document + options [(no)titlepage, landscape, one/twocolumn,...]
+\documentclass[10pt,a4paper,oneside,twocolumn]{article}
 
     \usepackage{float}	% for floating figures (putting them anywhere we want
     \usepackage{amsmath}	% for maths
@@ -13,6 +13,7 @@
     \restylefloat{table}	% floating figures(Tables)
     \usepackage{caption}
     \captionsetup{justification=justified}
+    \usepackage{subcaption}
 
     \numberwithin{equation}{section} %permits numbering within sections instead of globally
 \begin{document}
@@ -30,19 +31,28 @@
 \section{Introduction}
     Introduction to the article goes here \\
 \section{The Model}
-    \begin{enumerate}
-	\item
-	    \begin{figure}[!h]
-		    \includegraphics[scale=0.5]{sketch.png}
-		    \caption{Sketch of that thing blabla}
-	    \end{figure}
-	\item X : mRNA concentration \\
-	Y : protein concentration \\
-	K : coupling strength\\
-	etc\\
 
-	\item assumptions : cell-cell interaction and light act independently, expressivity = 1, ...
+    \begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{sketch.png}
+	\caption{Sketch of that thing blabla}
+    \end{figure}
+    
+    b/ablalaeolauelthaeou
 
-    \end{enumerate}
+    \begin{figure*}[!h]
+	\begin{subfigure}[b]{0.5\textwidth}
+	    \includegraphics[width=\textwidth]{A11.png}
+	    \caption{A gull}
+	    \label{fig:gull}
+	\end{subfigure}
+	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+	  %(or a blank line to force the subfigure onto a new line)
+	\begin{subfigure}[b]{0.5\textwidth}
+	    \includegraphics[width=\textwidth]{A12.png}
+	    \caption{A tiger}
+	    \label{fig:tiger}
+	\end{subfigure}
+    \end{figure*}
 
 \end{document}
