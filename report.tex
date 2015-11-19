@@ -15,6 +15,14 @@
     \captionsetup{justification=justified}
     \usepackage{subcaption}
 
+    \newcommand{\red}[1]{\textcolor{red}{#1}} 
+    \newcommand{\cyan}[1]{\textcolor{cyan}{#1}} 
+    \newcommand{\orange}[1]{\textcolor{orange}{#1}} 
+    \newcommand{\purple}[1]{\textcolor{purple}{#1}} 
+    \definecolor{forestgreen}{RGB}{0,102,0}
+    \newcommand{\green}[1]{\textcolor{forestgreen}{#1}} 
+
+
     \numberwithin{equation}{section} %permits numbering within sections instead of globally
 \begin{document}
 
@@ -36,9 +44,15 @@
     \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.3]{sketch.png}
-	\caption{Sketch of that thing blabla}
+	\caption{One-Cell Model\\
+	}
     \end{figure}
     
+    \begin{equation*}\frac{\delta X}{\delta t} = v_1 \frac{K_1^n}{K_1^n + Z^n} - v_2 \frac{X}{K_2 + X} \end{equation*}
+    \begin{equation*}\frac{\delta Y}{\delta t} = k_3 X - v_4 \frac{Y}{K_4 + Y}\end{equation*}
+    \begin{equation*}\frac{\delta Z}{\delta t} = k_5 Y - v_6 \frac{Z}{K_6 + Z}\end{equation*}
+
+
     b/ablalaeolauelthaeou
 
     \begin{figure*}[!h]
@@ -58,42 +72,42 @@
     \centering
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-AA0.png}
-	    \caption{v1 = 0 nM/h}
+	    \caption{$v_1$ = 0 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-AA1.png}
-	    \caption{v1 = 1 nM/h}
+	    \caption{$v_1$ = 1 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-AA2.png}
-	    \caption{v1 = 2 nM/h}
+	    \caption{$v_1$ = 2 nM/h}
 	\end{subfigure}
 	 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-AA3.png}
-	    \caption{v1 = 3 nM/h}
+	    \caption{$v_1$ = 3 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-AA4.png}
-	    \caption{v1 = 4 nM/h}
+	    \caption{$v_1$ = 4 nM/h}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-AA6.png}
-	    \caption{v1 = 6 nM/h}
+	    \caption{$v_1$ = 6 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-AA7.png}
-	    \caption{v1 = 8 nM/h}
+	    \caption{$v_1$ = 8 nM/h}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-AA10.png}
-	    \caption{v1 = 10 nM/h}
+	    \caption{$v_1$ = 10 nM/h}
 	\end{subfigure}
 	
 	\caption{With nice initial conditions}
@@ -103,42 +117,42 @@
     \centering
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-A0.png}
-	    \caption{v1 = 0 nM/h}
-	\end{subfigure}
-	~ 
-	\begin{subfigure}[b]{0.32\textwidth}
+	    \caption{$v_1$ = 0 nM/h}
+	    \end{subfigure}
+	    ~ 
+	    \begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-A1.png}
-	    \caption{v1 = 1 nM/h}
-	\end{subfigure}
-	~ 
+	    \caption{$v_1$ = 1 nM/h}
+	    \end{subfigure}
+	    ~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-A2.png}
-	    \caption{v1 = 2 nM/h}
+	    \caption{$v_1$ = 2 nM/h}
 	\end{subfigure}
 	 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-A3.png}
-	    \caption{v1 = 3 nM/h}
+	    \caption{$v_1$ = 3 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-A4.png}
-	    \caption{v1 = 4 nM/h}
+	    \caption{$v_1$ = 4 nM/h}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-A6.png}
-	    \caption{v1 = 6 nM/h}
+	    \caption{$v_1$ = 6 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-A8.png}
-	    \caption{v1 = 8 nM/h}
+	    \caption{$v_1$ = 8 nM/h}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{LotsofthesameA/A-A10.png}
-	    \caption{v1 = 10 nM/h}
+	    \caption{$v_1$ = 10 nM/h}
 	\end{subfigure}
 
 	\caption{With nice initial conditions}
@@ -147,20 +161,21 @@
     \begin{figure*}
 	\centering
 	    \includegraphics[width=0.5\textwidth]{A2.png}
-	    \caption{v1 = 1/3/5/7/9 nM/h}
+	    \caption{$v_1$ = \cyan{0.1}/\red{0.3}/\orange{0.5}/\purple{0.7}/\green{0.9} nM/h}
     \end{figure*}
 
     \begin{figure*}
 	\centering
 	    \begin{subfigure}[b]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{Bifurcation.png}
-		\caption{v1 = 1/3/5/7/9 nM/h}
+		\caption{at $h_{max}=1000$}
 	    \end{subfigure}
 	     ~ 
 	    \begin{subfigure}[b]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{Bifurcation10000.png}
-		\caption{v1 = 1/3/5/7/9 nM/h}
+		\caption{at $h_{max}=10000$}
 	    \end{subfigure}
+	    \caption{Bifurcation Diagram\\ plotted at time intervals : $[9/10; 1]$ of $h_{max}$}
     \end{figure*}
 
 \end{document}
