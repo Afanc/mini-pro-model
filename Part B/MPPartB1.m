@@ -5,7 +5,7 @@ close all;
 
 N=2;
 C=0;
-V=[1, 12];
+V=[1, 1.15];
 
 Timedelta=[0,1000]; %Time interval in which the script simulates the system
 Initial=zeros(1,N*4);
