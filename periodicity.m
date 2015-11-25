@@ -1,22 +1,22 @@
-function [  ] = periodicity( x,t )
+function [ Period, Omega ] = periodicity( t,x )
 %UNTITLED7 Summary of this function goes here
 %   Detailed explanation goes here
 
-[pxx,w]=periodogram(x,t);
+
 %xIndex=find(pxx==max(pxx),1,'first');
 %maxXValue=w(xIndex);
-figure();
-frequencyscale=w;
-plot(frequencyscale,pxx);
-xlabel('frequency w');
-ylabel('power')
-
 %periodscale=2.*pi./w;
 %plot(periodscale,pxx);
 %Omega=maxXValue*10;
+sizet=size(t);
+st=max(sizet);
+fs=t(st)/st;
+
+[pxx,w]=periodogram(x,t);
 sizew=size(w);
 normalization=0;
 Omega=0;
+Period=0;
 %Maximum=max(pxx);
 %threshold=Maximum/100; %Another way of cleaning up the signal
 %cheating=1; %A measure of the amount of noise you expect in the signal. Still work in progress
@@ -49,11 +49,17 @@ end
 for m=(windex-space):(windex+space)
     Omega=Omega+w(m)*(pxx(m)/normalization);
 end
-        
-
-
+ 
+frequencyscale=w./fs;
+Omega=Omega/fs
+Period=2*pi/Omega
 %Omega=w(windex)*10;
-Period=1/Omega;
+
+figure();
+plot(frequencyscale,pxx);
 title(['Periodogram with T=' num2str(Period) 'h and w=' num2str(Omega) 'per hour.']);
+xlabel('frequency w');
+ylabel('power')
+
 end
 
