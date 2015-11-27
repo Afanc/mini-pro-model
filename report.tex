@@ -14,6 +14,7 @@
     \usepackage{caption}
     \captionsetup{justification=justified}
     \usepackage{subcaption}
+    \usepackage{array}
 
     \newcommand{\red}[1]{\textcolor{red}{#1}} 
     \newcommand{\cyan}[1]{\textcolor{cyan}{#1}} 
@@ -21,7 +22,6 @@
     \newcommand{\purple}[1]{\textcolor{purple}{#1}} 
     \definecolor{forestgreen}{RGB}{0,102,0}
     \newcommand{\green}[1]{\textcolor{forestgreen}{#1}} 
-
 
     \numberwithin{equation}{section} %permits numbering within sections instead of globally
 \begin{document}
@@ -44,16 +44,22 @@
     \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.3]{sketch.png}
-	\caption{One-Cell Model\\
+	\caption{
+	    One-Cell Model\\
+	The gene $X$ codes for protein $Y$ which, in turn, activates transcriptional inhibitor $Z$. The resulting model behaves as a three-variable oscillator.
 	}
     \end{figure}
     
-    \begin{equation*}\frac{\delta X}{\delta t} = v_1 \frac{K_1^n}{K_1^n + Z^n} - v_2 \frac{X}{K_2 + X} \end{equation*}
-    \begin{equation*}\frac{\delta Y}{\delta t} = k_3 X - v_4 \frac{Y}{K_4 + Y}\end{equation*}
-    \begin{equation*}\frac{\delta Z}{\delta t} = k_5 Y - v_6 \frac{Z}{K_6 + Z}\end{equation*}
+    \begin{figure}[!h]
+	\centering
+	\begin{equation*}\frac{\delta X}{\delta t} = v_1 \frac{K_1^n}{K_1^n + Z^n} - v_2 \frac{X}{K_2 + X} \end{equation*}
+	\begin{equation*}\frac{\delta Y}{\delta t} = k_3 X - v_4 \frac{Y}{K_4 + Y}\end{equation*}
+	\begin{equation*}\frac{\delta Z}{\delta t} = k_5 Y - v_6 \frac{Z}{K_6 + Z}\end{equation*}
 
-
-    b/ablalaeolauelthaeou
+	\begin{tabular}{@{}>{$}l<{$}l@{}}
+	    v_1 & \\
+	\end{tabular}
+    \end{figure}
 
     \begin{figure*}[!h]
 	\begin{subfigure}[b]{0.5\textwidth}
