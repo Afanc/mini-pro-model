@@ -5,11 +5,11 @@ close all;
 
 Timedelta=[0,10000]; %Time interval in which the script simulates the system
 %Initial=[0.1640,0.3312,1.8141]; %Initial conditions of the system
-Initial=[0.2,0.5,2];
+Initial=[0,0,4];
 
 options=odeset('RelTol',1e-4,'AbsTol',[1e-4,1e-4,1e-4]);
 
-v1i=0.1;
+v1i=0.7;
 
 [T,Y]=ode45(MPdiffeqA(v1i),Timedelta,Initial,options);
 
@@ -25,3 +25,4 @@ title('X,Y & Z as a function of each other');
 xlabel('X');
 ylabel('Y');
 zlabel('Z');
+grid on;
