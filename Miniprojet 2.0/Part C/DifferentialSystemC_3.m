@@ -1,5 +1,5 @@
 
-function df= DifferentialSystemC_2(N,C,V,A)
+function df= DifferentialSystemC_2(N,C,V,A,Ainter)
 
 %DifferentialSystemB contains the differential equation system of part B
 %N is the input of how many cells are simulated
@@ -28,29 +28,35 @@ K=C;
 L=V;
 oscillators=N;
 Amatrix=A;
+Aintermatrix=Ainter;
 sumA=sum(Amatrix(:));
 sumA=sumA/N;
+sumAinter=sum(Aintermatrix(:));
+sumAinter=sumAinter/N;
 
 %Calls on a nested function to return a functionhandle to ode45
 df=@nestedB;
-
-
             
     function dy=nestedB(t,y)
-        dy= zeros(oscillators*4,1);
+        dy= zeros(2*oscillators*4,1);
         
         %Calculates the average of the V parameter of all the cells.
-        F=zeros(1,oscillators);
+        F=zeros(1,2*oscillators);
         
         for number=1:oscillators
         for j=1:oscillators
-            F(number)=F(number)+Amatrix(j,number)*(y(j*4));
+            F(number)=F(number)+Amatrix(j,number)*(y(j*4))+Aintermatrix(j,number)*(y(oscillators+(j*4)));
+            F(N+number)=F(N+number)+Amatrix(j,number)*(y(oscillators+(j*4)))+Aintermatrix(j,number)*(y(j*4));
         end
         end
-        F=F/sumA;
- 
+        if sumA==0 && sumAinter==0;
+            F=zeros(1,2*oscillators);
+        else
+        F=F/(sumA+sumAinter);
+        end
+        
         %shifts all parameters by 4
-        for i=1:oscillators
+        for i=1:2*oscillators
             i1=1+(i-1)*4;
             i2=2+(i-1)*4;
             i3=3+(i-1)*4;

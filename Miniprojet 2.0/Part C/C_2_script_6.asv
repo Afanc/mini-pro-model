@@ -4,8 +4,8 @@ clear all;
 close all;
 
 %Initializes positions of the cells and their number
-Width=8;
-Length=16;
+Width=12;
+Length=30;
 N=Width*Length;
 Position=zeros(2,N);
 for counter1=1:Width
@@ -17,13 +17,18 @@ end
         
 %Initialization of periods around mu with sigma standard deviation
 V=zeros(1,N); 
-for s=1:N
-    mu=1;
-    sigma=0.04;
-    V(s)=normrnd(mu,sigma);
+lambdamin=0.9;
+lambdamax=1.1;
+lambdavector=linspace(lambdamin,lambdamax,Length);
+for clic=1:Width
+    for clic2=1:Length
+        mu=lambdavector(clic2);
+        sigma=0.05/N;
+        V(clic2+(clic-1)*Length)=normrnd(mu,sigma);
+    end
 end
   
-Timedelta=[0,240]; %Time interval in which the script simulates the system
+Timedelta=[0,500]; %Time interval in which the script simulates the system
 
 %Allows to set initial conditions of X,Y,Z for all cells (not only if N=2.
 Initial=zeros(1,N*4);
@@ -38,17 +43,27 @@ options=odeset('RelTol',1e-6);
 
 C=1.5; %Coupling strength
 
-A=zeros(N);
+A=zeros(N); %Coupling matrix
+for cN=1:N
+    for cN2=1:N
+        g=cN-cN2;
+        f=cN2-cN;
+        if cN==cN2 || f==1 || g==1 || f==Length || g==Length || f==Length-1 ||g==Length-1 || f==Length+1 || g==Length+1 
+            A(cN,cN2)=1;
+        else
+            A(cN,cN2)=0;
+        end
+    end
+end
 
 %Simulates the system
 [T,Y]=ode45(DifferentialSystemC_2(N,C,V,A),Timedelta,Initial,options);
 
 %Makes a gif
 figure();
-filename = 'C_2_gif_2.gif';
+filename = 'C_2_gif_5.gif';
 sizeT=size(T);
-stepsize=10;
-subplot(1,2,1)
+stepsize=50;
 for time=1:stepsize:sizeT
     
 P=zeros(Width,Length);
@@ -59,6 +74,7 @@ for c1=1:Width
         P(c1,c2)=Xcoord;   
     end
 end
+
 imagesc(P);
 caxis([0.0,0.4]);
 clb=colorbar;
@@ -78,7 +94,7 @@ end
         
 end
 
-subplot(1,2,2);
+figure();
 for t=1:N
     
     plot(T,Y(:,1+((t-1)*4)),'-')
@@ -91,6 +107,7 @@ for t=1:N
 end
 
     
+
 
 
 

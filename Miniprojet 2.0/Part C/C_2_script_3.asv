@@ -17,9 +17,12 @@ end
         
 %Initialization of periods around mu with sigma standard deviation
 V=zeros(1,N); 
+lambdamin=0.9;
+lambdamax=1.1
+lambdavector=linspace(lambdamin,lambdamax,Length);
 for s=1:N
     mu=1;
-    sigma=0.04;
+    sigma=0.05;
     V(s)=normrnd(mu,sigma);
 end
   
@@ -48,13 +51,12 @@ figure();
 filename = 'C_2_gif_2.gif';
 sizeT=size(T);
 stepsize=10;
-subplot(1,2,1)
 for time=1:stepsize:sizeT
     
 P=zeros(Width,Length);
 for c1=1:Width
     for c2=1:Length
-        coord=c2+(c1-1)*Length;
+        coord=c2+(c1-1)*Width;
         Xcoord=Y(time,1+(coord-1)*4);
         P(c1,c2)=Xcoord;   
     end
@@ -78,11 +80,11 @@ end
         
 end
 
-subplot(1,2,2);
+figure();
 for t=1:N
     
     plot(T,Y(:,1+((t-1)*4)),'-')
-    title(['Evolution of X1, X2 etc over time'] );
+    title(['Evolution of X1, X2 etc over time with P=' num2str(Probability) '.'] );
     xlabel('Time[h]');
     ylabel('Amount in [nM]');
     grid on;
