@@ -3,10 +3,10 @@
 clear all;
 close all;
 
-Timedelta=[0,1000]; %Time interval in which the script simulates the system
+Timedelta=[0,10]; %Time interval in which the script simulates the system
 Initial=[0,0,4]; %Initial conditions
 
-options=odeset('RelTol',1e-4);
+options=odeset('RelTol',1e-8);
 
 %Sets parameter v1
 v1i=0.7;
