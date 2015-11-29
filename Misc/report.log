@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.5.10)  27 NOV 2015 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.5.10)  29 NOV 2015 11:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -909,14 +909,14 @@ your preamble.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
+* \textwidth=512.14963pt
 * \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -969,387 +969,305 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-<sketch.png, id=15, 838.13126pt x 390.45876pt>
+<sketch.png, id=23, 838.13126pt x 390.45876pt>
 File: sketch.png Graphic file (type png)
  <use sketch.png>
 Package pdftex.def Info: sketch.png used on input line 46.
-(pdftex.def)             Requested size: 251.44131pt x 117.13852pt.
+(pdftex.def)             Requested size: 256.07481pt x 119.29529pt.
 
-Overfull \hbox (14.59288pt too wide) in paragraph at lines 46--50
- [][] 
- []
-
-
-LaTeX Warning: File `../Part A/A11.png' not found on input line 66.
-
-<../Part A/A11.png, id=16, 421.575pt x 316.18124pt>
-File: ../Part A/A11.png Graphic file (type png)
- <use ../Part A/A11.png>
-Package pdftex.def Info: ../Part A/A11.png used on input line 66.
-(pdftex.def)             Requested size: 241.84843pt x 181.38788pt.
-
-Overfull \hbox (51.11124pt too wide) in paragraph at lines 66--67
-[]\OT1/cmr/m/n/10 A/A11.png [] 
- []
-
-
-LaTeX Warning: File `../Part A/A12.png' not found on input line 71.
-
-<../Part A/A12.png, id=17, 421.575pt x 316.18124pt>
-File: ../Part A/A12.png Graphic file (type png)
- <use ../Part A/A12.png>
-Package pdftex.def Info: ../Part A/A12.png used on input line 71.
-(pdftex.def)             Requested size: 241.84843pt x 181.38788pt.
-
-Overfull \hbox (51.11124pt too wide) in paragraph at lines 71--72
-[]\OT1/cmr/m/n/10 A/A12.png [] 
- []
-
-
-Overfull \hbox (6.66664pt too wide) in paragraph at lines 65--74
+Overfull \hbox (6.66664pt too wide) in paragraph at lines 45--69
 [][]   [] 
  []
 
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-AA0.png' not found on input lin
-e 80.
+LaTeX Warning: File `"../Old Trash/Part A/A11.png' not found on input line 73.
 
-<../Part A/LotsofthesameA/A-AA0.png, id=18, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-AA0.png Graphic file (type png)
+<"../Old Trash/Part A/A11.png, id=24, 421.575pt x 316.18124pt>
+File: "../Old Trash/Part A/A11.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-AA0.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-AA0.png used on input line 
-80.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+<use "../Old Trash/Part A/A11.png>
+Package pdftex.def Info: "../Old Trash/Part A/A11.png used on input line 73.
+(pdftex.def)             Requested size: 256.07481pt x 192.05975pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-AA0.png
+
+LaTeX Warning: File `"../Old Trash/Part A/A12.png' not found on input line 79.
+
+<"../Old Trash/Part A/A12.png, id=25, 421.575pt x 316.18124pt>
+File: "../Old Trash/Part A/A12.png Graphic file (type png)
+
+<use "../Old Trash/Part A/A12.png>
+Package pdftex.def Info: "../Old Trash/Part A/A12.png used on input line 79.
+(pdftex.def)             Requested size: 256.07481pt x 192.05975pt.
+
+Overfull \hbox (6.66664pt too wide) in paragraph at lines 72--84
+[][]   [] 
  []
 
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-AA1.png' not found on input lin
-e 85.
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-AA0.png' not found o
+n input line 90.
 
-<../Part A/LotsofthesameA/A-AA1.png, id=19, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-AA1.png Graphic file (type png)
+<"../Old Trash/Part A/LotsofthesameA/A-AA0.png, id=26, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-AA0.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-AA1.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-AA1.png used on input line 
-85.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+<use "../Old Trash/Part A/LotsofthesameA/A-AA0.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-AA0.png used on 
+input line 90.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-AA1.png
- []
 
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-AA1.png' not found o
+n input line 95.
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-AA2.png' not found on input lin
-e 90.
+<"../Old Trash/Part A/LotsofthesameA/A-AA1.png, id=27, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-AA1.png Graphic file (type png)
 
-<../Part A/LotsofthesameA/A-AA2.png, id=20, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-AA2.png Graphic file (type png)
+<use "../Old Trash/Part A/LotsofthesameA/A-AA1.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-AA1.png used on 
+input line 95.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-<use ../Part A/LotsofthesameA/A-AA2.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-AA2.png used on input line 
-90.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-AA2.png
- []
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-AA2.png' not found o
+n input line 100.
 
+<"../Old Trash/Part A/LotsofthesameA/A-AA2.png, id=28, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-AA2.png Graphic file (type png)
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-AA3.png' not found on input lin
-e 95.
+<use "../Old Trash/Part A/LotsofthesameA/A-AA2.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-AA2.png used on 
+input line 100.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-<../Part A/LotsofthesameA/A-AA3.png, id=21, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-AA3.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-AA3.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-AA3.png used on input line 
-95.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-AA3.png' not found o
+n input line 105.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-AA3.png
- []
+<"../Old Trash/Part A/LotsofthesameA/A-AA3.png, id=29, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-AA3.png Graphic file (type png)
 
+<use "../Old Trash/Part A/LotsofthesameA/A-AA3.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-AA3.png used on 
+input line 105.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-AA4.png' not found on input lin
-e 100.
 
-<../Part A/LotsofthesameA/A-AA4.png, id=22, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-AA4.png Graphic file (type png)
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-AA4.png' not found o
+n input line 110.
 
-<use ../Part A/LotsofthesameA/A-AA4.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-AA4.png used on input line 
-100.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+<"../Old Trash/Part A/LotsofthesameA/A-AA4.png, id=30, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-AA4.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-AA4.png
- []
+<use "../Old Trash/Part A/LotsofthesameA/A-AA4.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-AA4.png used on 
+input line 110.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-AA6.png' not found on input lin
-e 105.
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-AA6.png' not found o
+n input line 115.
 
-<../Part A/LotsofthesameA/A-AA6.png, id=23, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-AA6.png Graphic file (type png)
+<"../Old Trash/Part A/LotsofthesameA/A-AA6.png, id=31, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-AA6.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-AA6.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-AA6.png used on input line 
-105.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+<use "../Old Trash/Part A/LotsofthesameA/A-AA6.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-AA6.png used on 
+input line 115.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-AA6.png
- []
 
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-AA7.png' not found o
+n input line 120.
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-AA7.png' not found on input lin
-e 110.
+<"../Old Trash/Part A/LotsofthesameA/A-AA7.png, id=32, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-AA7.png Graphic file (type png)
 
-<../Part A/LotsofthesameA/A-AA7.png, id=24, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-AA7.png Graphic file (type png)
+<use "../Old Trash/Part A/LotsofthesameA/A-AA7.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-AA7.png used on 
+input line 120.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-<use ../Part A/LotsofthesameA/A-AA7.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-AA7.png used on input line 
-110.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-AA7.png
- []
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-AA10.png' not found 
+on input line 125.
 
+<"../Old Trash/Part A/LotsofthesameA/A-AA10.png, id=33, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-AA10.png Graphic file (type png)
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-AA10.png' not found on input li
-ne 115.
+<use "../Old Trash/Part A/LotsofthesameA/A-AA10.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-AA10.png used on
+ input line 125.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-<../Part A/LotsofthesameA/A-AA10.png, id=25, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-AA10.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-AA10.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-AA10.png used on input line
- 115.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-A0.png' not found on
+ input line 135.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-AA10.png
- []
+<"../Old Trash/Part A/LotsofthesameA/A-A0.png, id=34, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-A0.png Graphic file (type png)
 
+<use "../Old Trash/Part A/LotsofthesameA/A-A0.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-A0.png used on i
+nput line 135.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-A0.png' not found on input line
- 125.
 
-<../Part A/LotsofthesameA/A-A0.png, id=26, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-A0.png Graphic file (type png)
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-A1.png' not found on
+ input line 140.
 
-<use ../Part A/LotsofthesameA/A-A0.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-A0.png used on input line 1
-25.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+<"../Old Trash/Part A/LotsofthesameA/A-A1.png, id=35, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-A1.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-A0.png
- []
+<use "../Old Trash/Part A/LotsofthesameA/A-A1.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-A1.png used on i
+nput line 140.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-A1.png' not found on input line
- 130.
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-A2.png' not found on
+ input line 145.
 
-<../Part A/LotsofthesameA/A-A1.png, id=27, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-A1.png Graphic file (type png)
+<"../Old Trash/Part A/LotsofthesameA/A-A2.png, id=36, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-A2.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-A1.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-A1.png used on input line 1
-30.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+<use "../Old Trash/Part A/LotsofthesameA/A-A2.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-A2.png used on i
+nput line 145.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-A1.png
- []
 
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-A3.png' not found on
+ input line 150.
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-A2.png' not found on input line
- 135.
+<"../Old Trash/Part A/LotsofthesameA/A-A3.png, id=37, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-A3.png Graphic file (type png)
 
-<../Part A/LotsofthesameA/A-A2.png, id=28, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-A2.png Graphic file (type png)
+<use "../Old Trash/Part A/LotsofthesameA/A-A3.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-A3.png used on i
+nput line 150.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-<use ../Part A/LotsofthesameA/A-A2.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-A2.png used on input line 1
-35.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-A2.png
- []
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-A4.png' not found on
+ input line 155.
 
+<"../Old Trash/Part A/LotsofthesameA/A-A4.png, id=38, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-A4.png Graphic file (type png)
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-A3.png' not found on input line
- 140.
+<use "../Old Trash/Part A/LotsofthesameA/A-A4.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-A4.png used on i
+nput line 155.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-<../Part A/LotsofthesameA/A-A3.png, id=29, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-A3.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-A3.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-A3.png used on input line 1
-40.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-A6.png' not found on
+ input line 160.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-A3.png
- []
+<"../Old Trash/Part A/LotsofthesameA/A-A6.png, id=39, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-A6.png Graphic file (type png)
 
+<use "../Old Trash/Part A/LotsofthesameA/A-A6.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-A6.png used on i
+nput line 160.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-A4.png' not found on input line
- 145.
 
-<../Part A/LotsofthesameA/A-A4.png, id=30, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-A4.png Graphic file (type png)
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-A8.png' not found on
+ input line 165.
 
-<use ../Part A/LotsofthesameA/A-A4.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-A4.png used on input line 1
-45.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+<"../Old Trash/Part A/LotsofthesameA/A-A8.png, id=40, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-A8.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-A4.png
- []
+<use "../Old Trash/Part A/LotsofthesameA/A-A8.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-A8.png used on i
+nput line 165.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-A6.png' not found on input line
- 150.
+LaTeX Warning: File `"../Old Trash/Part A/LotsofthesameA/A-A10.png' not found o
+n input line 170.
 
-<../Part A/LotsofthesameA/A-A6.png, id=31, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-A6.png Graphic file (type png)
+<"../Old Trash/Part A/LotsofthesameA/A-A10.png, id=41, 578.16pt x 433.62pt>
+File: "../Old Trash/Part A/LotsofthesameA/A-A10.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-A6.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-A6.png used on input line 1
-50.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+<use "../Old Trash/Part A/LotsofthesameA/A-A10.png>
+Package pdftex.def Info: "../Old Trash/Part A/LotsofthesameA/A-A10.png used on 
+input line 170.
+(pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-A6.png
- []
 
+LaTeX Warning: File `"../Old Trash/Part A/A2.png' not found on input line 179.
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-A8.png' not found on input line
- 155.
+<"../Old Trash/Part A/A2.png, id=42, 721.94719pt x 429.10312pt>
+File: "../Old Trash/Part A/A2.png Graphic file (type png)
 
-<../Part A/LotsofthesameA/A-A8.png, id=32, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-A8.png Graphic file (type png)
+<use "../Old Trash/Part A/A2.png>
+Package pdftex.def Info: "../Old Trash/Part A/A2.png used on input line 179.
+(pdftex.def)             Requested size: 256.07481pt x 152.19844pt.
 
-<use ../Part A/LotsofthesameA/A-A8.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-A8.png used on input line 1
-55.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-A8.png
- []
+LaTeX Warning: File `"../Old Trash/Part A/Bifurcation.png' not found on input l
+ine 186.
 
+<"../Old Trash/Part A/Bifurcation.png, id=43, 421.575pt x 316.18124pt>
+File: "../Old Trash/Part A/Bifurcation.png Graphic file (type png)
 
-LaTeX Warning: File `../Part A/LotsofthesameA/A-A10.png' not found on input lin
-e 160.
+<use "../Old Trash/Part A/Bifurcation.png>
+Package pdftex.def Info: "../Old Trash/Part A/Bifurcation.png used on input lin
+e 186.
+(pdftex.def)             Requested size: 230.46576pt x 172.85329pt.
 
-<../Part A/LotsofthesameA/A-A10.png, id=33, 578.16pt x 433.62pt>
-File: ../Part A/LotsofthesameA/A-A10.png Graphic file (type png)
 
-<use ../Part A/LotsofthesameA/A-A10.png>
-Package pdftex.def Info: ../Part A/LotsofthesameA/A-A10.png used on input line 
-160.
-(pdftex.def)             Requested size: 154.78653pt x 116.08649pt.
+LaTeX Warning: File `"../Old Trash/Part A/Bifurcation10000.png' not found on in
+put line 191.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-[]\OT1/cmr/m/n/10 A/LotsofthesameA/A-A10.png
- []
+<"../Old Trash/Part A/Bifurcation10000.png, id=44, 421.575pt x 316.18124pt>
+File: "../Old Trash/Part A/Bifurcation10000.png Graphic file (type png)
 
-
-LaTeX Warning: File `../Part A/A2.png' not found on input line 169.
-
-<../Part A/A2.png, id=34, 721.94719pt x 429.10312pt>
-File: ../Part A/A2.png Graphic file (type png)
- <use ../Part A/A2.png>
-Package pdftex.def Info: ../Part A/A2.png used on input line 169.
-(pdftex.def)             Requested size: 241.84843pt x 143.74551pt.
-
-
-LaTeX Warning: File `../Part A/Bifurcation.png' not found on input line 176.
-
-<../Part A/Bifurcation.png, id=35, 421.575pt x 316.18124pt>
-File: ../Part A/Bifurcation.png Graphic file (type png)
-
-<use ../Part A/Bifurcation.png>
-Package pdftex.def Info: ../Part A/Bifurcation.png used on input line 176.
-(pdftex.def)             Requested size: 217.66211pt x 163.24765pt.
-
-Overfull \hbox (82.66689pt too wide) in paragraph at lines 176--177
-[]\OT1/cmr/m/n/10 A/Bifurcation.png [] 
- []
-
-
-LaTeX Warning: File `../Part A/Bifurcation10000.png' not found on input line 18
-1.
-
-<../Part A/Bifurcation10000.png, id=36, 421.575pt x 316.18124pt>
-File: ../Part A/Bifurcation10000.png Graphic file (type png)
-
-<use ../Part A/Bifurcation10000.png>
-Package pdftex.def Info: ../Part A/Bifurcation10000.png used on input line 181.
-
-(pdftex.def)             Requested size: 217.66211pt x 163.24765pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-[]\OT1/cmr/m/n/10 A/Bifurcation10000.png
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+<use "../Old Trash/Part A/Bifurcation10000.png>
+Package pdftex.def Info: "../Old Trash/Part A/Bifurcation10000.png used on inpu
+t line 191.
+(pdftex.def)             Requested size: 230.46576pt x 172.85329pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.187 \end{document}
+l.197 \end{document}
                      [1
 
 
- <./sketch.png>] [2 <../Part A/A11.png (PNG copy)> <../Part A/A12.png (PNG copy
-)> <../Part A/LotsofthesameA/A-AA0.png (PNG copy)> <../Part A/LotsofthesameA/A-
-AA1.png (PNG copy)> <../Part A/LotsofthesameA/A-AA2.png (PNG copy)> <../Part A/
-LotsofthesameA/A-AA3.png (PNG copy)> <../Part A/LotsofthesameA/A-AA4.png (PNG c
-opy)> <../Part A/LotsofthesameA/A-AA6.png (PNG copy)> <../Part A/LotsofthesameA
-/A-AA7.png (PNG copy)> <../Part A/LotsofthesameA/A-AA10.png (PNG copy)>] [3 <..
-/Part A/LotsofthesameA/A-A0.png (PNG copy)> <../Part A/LotsofthesameA/A-A1.png 
-(PNG copy)> <../Part A/LotsofthesameA/A-A2.png (PNG copy)> <../Part A/Lotsofthe
-sameA/A-A3.png (PNG copy)> <../Part A/LotsofthesameA/A-A4.png (PNG copy)> <../P
-art A/LotsofthesameA/A-A6.png (PNG copy)> <../Part A/LotsofthesameA/A-A8.png (P
-NG copy)> <../Part A/LotsofthesameA/A-A10.png (PNG copy)> <../Part A/A2.png (PN
-G copy)>] [4 <../Part A/Bifurcation.png (PNG copy)> <../Part A/Bifurcation10000
-.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+] [2 <./sketch.png> <../Old Trash/Part A/A11.png (PNG copy)> <../Old Trash/Part
+ A/A12.png (PNG copy)>] [3 <../Old Trash/Part A/LotsofthesameA/A-AA0.png (PNG c
+opy)> <../Old Trash/Part A/LotsofthesameA/A-AA1.png (PNG copy)> <../Old Trash/P
+art A/LotsofthesameA/A-AA2.png (PNG copy)> <../Old Trash/Part A/LotsofthesameA/
+A-AA3.png (PNG copy)> <../Old Trash/Part A/LotsofthesameA/A-AA4.png (PNG copy)>
+ <../Old Trash/Part A/LotsofthesameA/A-AA6.png (PNG copy)> <../Old Trash/Part A
+/LotsofthesameA/A-AA7.png (PNG copy)> <../Old Trash/Part A/LotsofthesameA/A-AA1
+0.png (PNG copy)>] [4 <../Old Trash/Part A/LotsofthesameA/A-A0.png (PNG copy)> 
+<../Old Trash/Part A/LotsofthesameA/A-A1.png (PNG copy)> <../Old Trash/Part A/L
+otsofthesameA/A-A2.png (PNG copy)> <../Old Trash/Part A/LotsofthesameA/A-A3.png
+ (PNG copy)> <../Old Trash/Part A/LotsofthesameA/A-A4.png (PNG copy)> <../Old T
+rash/Part A/LotsofthesameA/A-A6.png (PNG copy)> <../Old Trash/Part A/Lotsofthes
+ameA/A-A8.png (PNG copy)> <../Old Trash/Part A/LotsofthesameA/A-A10.png (PNG co
+py)> <../Old Trash/Part A/A2.png (PNG copy)>] [5 <../Old Trash/Part A/Bifurcati
+on.png (PNG copy)> <../Old Trash/Part A/Bifurcation10000.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  BF5823296D4C76F8E9B15D28790958A8;91.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: BF5823296D4C76F8E9B15D28790958A8;91.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 26507 strings out of 495020
- 620897 string characters out of 6181324
- 785637 words of memory out of 5000000
- 29286 multiletter control sequences out of 15000+600000
+ 26532 strings out of 495020
+ 622003 string characters out of 6181324
+ 786637 words of memory out of 5000000
+ 29289 multiletter control sequences out of 15000+600000
  10498 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,9n,76p,916b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,76p,916b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
@@ -1361,10 +1279,10 @@ blic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (5 pages, 823694 bytes).
+Output written on report.pdf (6 pages, 829727 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  14 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
