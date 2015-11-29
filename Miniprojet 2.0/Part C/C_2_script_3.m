@@ -4,8 +4,8 @@ clear all;
 close all;
 
 %Initializes positions of the cells and their number
-Width=10;
-Length=14;
+Width=8;
+Length=16;
 N=Width*Length;
 Position=zeros(2,N);
 for counter1=1:Width
@@ -36,18 +36,9 @@ end
 
 options=odeset('RelTol',1e-6);
 
-C=0; %Coupling strength
+C=1.5; %Coupling strength
 
-Probability=0.5;
 A=zeros(N);
-for ce=1:N
-for ec=1:N
-    hashtag=rand;
-    if hashtag >= Probability
-        A(ce,ec)=1;
-    end
-end
-end
 
 %Simulates the system
 [T,Y]=ode45(DifferentialSystemC_2(N,C,V,A),Timedelta,Initial,options);
@@ -56,13 +47,13 @@ end
 figure();
 filename = 'C_2_gif_2.gif';
 sizeT=size(T);
-stepsize=25;
-for time=1:10:sizeT
+stepsize=10;
+for time=1:stepsize:sizeT
     
 P=zeros(Width,Length);
 for c1=1:Width
     for c2=1:Length
-        coord=c2+(c1-1)*Width;
+        coord=c2+(c1-1)*Length;
         Xcoord=Y(time,1+(coord-1)*4);
         P(c1,c2)=Xcoord;   
     end
@@ -70,7 +61,7 @@ end
 imagesc(P);
 caxis([0.0,0.4]);
 clb=colorbar;
-title(['Visualisation of the X values of ' num2str(N) 'cells.']);
+title(['Visualisation of the X values of ' num2str(N) ' cells.']);
 ylabel('x: Width');
 xlabel('y: Length');
 clb.Label.String = 'Concentration of X (in nM)';
@@ -90,7 +81,7 @@ figure();
 for t=1:N
     
     plot(T,Y(:,1+((t-1)*4)),'-')
-    title(['Evolution of X1, X2 etc over time' ]);
+    title(['Evolution of X1, X2 etc over time'] );
     xlabel('Time[h]');
     ylabel('Amount in [nM]');
     grid on;
@@ -99,7 +90,6 @@ for t=1:N
 end
 
     
-
 
 
 

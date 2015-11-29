@@ -48,7 +48,7 @@ figure();
 P=zeros(Width,Length);
 for c1=1:Width
     for c2=1:Length
-        coord=c2+(c1-1)*Width;
+        coord=c2+(c1-1)*Length;
         Xcoord=Y(end,1+(coord-1)*4);
         P(c1,c2)=Xcoord;
         
