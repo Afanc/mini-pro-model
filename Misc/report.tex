@@ -235,18 +235,18 @@
 	    \captionsetup{labelformat=empty}
 	    \caption{\\
 	    \begin{tabular}{@{}>{$}l<{$}l @{\hskip 0.2cm} | @{\hskip 0.2cm} @{}>{$}l<{$}l@{}}
-		v_1 & translation rate of $X$ & k_7 & transcription rate of $V$ \\
-		v_2 & degradation rate of $X$ &	k_1 & transcription rate of $X$ \\
+		v_1 & translation rate of $X$ & k_1 & transcription rate of $X$ \\
+		v_2 & degradation rate of $X$ &	K_1 & Michaelis constant of $X$ \\
 		v_4 & degradation rate of $Y$ & K_4 & Michaelis constant of $Y$ \\
 		v_6 & degradation rate of $Z$ & K_6 & Michaelis constant of $Z$ \\
 		v_8 & degradation rate of $V$ & K_8 & Michaelis constant of $V$ \\
-		k_3 & transcription rate of $X$ & K & Coupling Constant \\
-		k_5 & transcription rate of $Z$ && \\
+		k_3 & transcription rate of $X$ & K_c & Michaelis constant of $X$ by $F$\\
+		k_5 & transcription rate of $Z$ & v_c & Activation rate of $X$ by $F$ \\
+		k_7 & transcription rate of $V$ & K & Coupling Constant \\
 	    \end{tabular}
 	    }
 	\end{subfigure}
     \end{figure*}
-
 
     \begin{figure*}
     \centering
@@ -281,6 +281,8 @@
 	\end{subfigure}
 
 	\caption{$X_1$ and $X_2$ trajectories with varying $\lambda_i$ in a two-cells Model\\
+	With unequal periods, the limit cycles of both cells aren't in phase and form these '8' patterns. The box that appears directly gives us the maximum values of $X_1$ and $X_2$
+
 	\red{I don't really know what to say except 'wow it's cool' + square is max/min of Xs}}
     \end{figure*}
 
