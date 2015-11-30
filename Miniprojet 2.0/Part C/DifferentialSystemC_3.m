@@ -29,10 +29,9 @@ L=V;
 oscillators=N;
 Amatrix=A;
 Aintermatrix=Ainter;
-sumA=sum(Amatrix(:));
-sumA=sumA/N;
-sumAinter=sum(Aintermatrix(:));
-sumAinter=sumAinter/N;
+sumA=sum(Amatrix);
+sumAinter=sum(Aintermatrix);
+
 
 %Calls on a nested function to return a functionhandle to ode45
 df=@nestedB;
@@ -44,17 +43,19 @@ df=@nestedB;
         F=zeros(1,2*oscillators);
         
         for number=1:oscillators
-        for j=1:oscillators
-            F(number)=F(number)+Amatrix(j,number)*(y(j*4))+Aintermatrix(j,number)*(y(oscillators+(j*4)));
-            F(N+number)=F(N+number)+Amatrix(j,number)*(y(oscillators+(j*4)))+Aintermatrix(j,number)*(y(j*4));
+            for j=1:oscillators
+                F(number)=F(number)+Amatrix(j,number)*(y(j*4))+Aintermatrix(j,number)*(y((oscillators+j)*4));
+                F(oscillators+number)=F(oscillators+number)+Amatrix(j,number)*(y((oscillators+j)*4))+Aintermatrix(j,number)*(y(j*4));
+            end
+            if sumA(number)==0 && sumAinter(number)==0
+                F(number)=0;
+                F(N+number)=0;
+            else
+                F(number)=F(number)/(sumA(number)+sumAinter(number));
+                F(N+number)=F(N+number)/(sumA(number)+sumAinter(number));
+            end
         end
-        end
-        if sumA==0 && sumAinter==0;
-            F=zeros(1,2*oscillators);
-        else
-        F=F/(sumA+sumAinter);
-        end
-        
+       
         %shifts all parameters by 4
         for i=1:2*oscillators
             i1=1+(i-1)*4;
