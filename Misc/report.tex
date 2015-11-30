@@ -73,7 +73,7 @@
 		v_2 & degradation rate of $X$ & K_4 & Michaelis constant of $Y$ \\
 		v_4 & degradation rate of $Y$ & K_6 & Michaelis constant of $Z$\\
 		v_6 & degradation rate of $Z$ &&\\
-		k_3 & transcription rate of $X$ && \\
+		k_3 & transcription rate of $Y$ && \\
 		k_5 & transcription rate of $Z$ &&\\
 	    \end{tabular}
 	    }
@@ -202,6 +202,7 @@
 	\caption{Trajectories when varying $v_1$ with initial conditions $X_0 = 0.16$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\
 	$v_1$ has to reach a certain value for $X(t)$ to be able to compensate its inhibition by $Z(t)$ and therefore for the system to reach a limit cycle. We observe that this value is slightly greater than 4nM/h, as the trajectories still converge to null in (e); there is an 'eye', even though it is smaller than in (f) and (g), since the timescale is not big enough to let the system dissipate completely.
 	}
+	\label{fig:6}
     \end{figure*}
 
     \begin{figure*}
@@ -240,7 +241,7 @@
 		v_4 & degradation rate of $Y$ & K_4 & Michaelis constant of $Y$ \\
 		v_6 & degradation rate of $Z$ & K_6 & Michaelis constant of $Z$ \\
 		v_8 & degradation rate of $V$ & K_8 & Michaelis constant of $V$ \\
-		k_3 & transcription rate of $X$ & K_c & Michaelis constant of $X$ by $F$\\
+		k_3 & transcription rate of $Y$ & K_c & Michaelis constant of $X$ by $F$\\
 		k_5 & transcription rate of $Z$ & v_c & Activation rate of $X$ by $F$ \\
 		k_7 & transcription rate of $V$ & K & Coupling Constant \\
 	    \end{tabular}
@@ -280,8 +281,8 @@
 	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
-	\caption{\red{$X_1(t)$} and \blue{$X_2(t)$} trajectories in a two-cells Model \\
-	Figure (a) has both signals perfectly aligned. We observe that \red{what ? Different periods ? aaa}}
+	\caption{\red{$X_1(t)$} and \blue{$X_2(t)$} trajectories in a two-cells Model with $K=0$ ($\leftrightarrow$ no coupling)\\
+	Figure (a) has both signals perfectly aligned. We observe no synchronisation, as excepted.}
     \end{figure*}
 
 
@@ -317,8 +318,9 @@
 	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
-	\caption{$X_1$ and $X_2$ trajectories with varying $\lambda_i$ in a two-cells Model\\
-	Figure (a), the control, makes perfect sense since the two cells have the same period, hence the exact same signal. With unequal periods, the limit cycles of both cells aren't in phase and form these '8' patterns. The box that appears represent the variation of $X_1$ and $X_2$ and therefore directly gives us their minimal and maximal values. (f) gives us \red{weird shit ?}\red{what can we say bout (f) ?}}
+	\caption{$X_1$ and $X_2$ trajectories with varying $\lambda_i$ in a two-cells Model with $K=0$\\
+	Figure (a), the control, makes perfect sense since the two cells have the same period, hence the exact same signal. With unequal periods, the limit cycles of both cells aren't in phase and form these '8' patterns. The fluctuations at the beginning of trajectories come from the inner adjustment of the cells (see Figure \ref{fig:6}). The box that appears represent the variation of $X_1$ and $X_2$ and therefore directly gives us their minimal and maximal values. (f) gives us \red{weird shit ?}\red{what can we say bout (f) ?}}
+	\label{fig:11}
     \end{figure*}
     
    \begin{figure*}
@@ -353,7 +355,8 @@
 	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
-	\caption{raraara}
+	\caption{\orange{$X_1(t)$} and \blue{$Y_2(t)$} trajectories in a two-cells Model with $K=0$ \\
+	We observe no synchronisation, as excepted. \red{nothing else to say ? :(}}
     \end{figure*}
 
     \begin{figure*}
@@ -388,9 +391,31 @@
 	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
-	\caption{$X_1$ and $Y_2$ trajectories \\
+	\caption{$X_1$ and $Y_2$ trajectories with varying $\lambda_i$ in a two-cells Model with $K=0$\\
+	Once again, both cells tend to reach their limit cycles without any kind of interaction. The same observations as in Figure \ref{fig:11} can be made.
 	}
     \end{figure*}
+
+    \begin{figure*}
+    \centering
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_N_3_graph_2.png}
+	    \caption{$R$ vs $K$}
+	\end{subfigure}
+
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation.png}
+	    \caption{$K=0.0$}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png}
+	    \caption{$K=0.3$}
+	\end{subfigure}
+	~ 
+	\caption{raraara}
+    \end{figure*}
+
 
     \begin{figure*}
     \centering
@@ -424,22 +449,16 @@
 
     \begin{figure*}
     \centering
-	\begin{subfigure}[b]{0.3\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation.png}
+	\begin{subfigure}[b]{\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part C/C_2_figure_1.png}
 	    \caption{$K=0.0$}
 	\end{subfigure}
-	~ 
-	\begin{subfigure}[b]{0.3\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png}
+	 
+	\begin{subfigure}[b]{\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part C/C_2_figure_2.png}
 	    \caption{$K=0.3$}
-	\end{subfigure}
-	~ 
-	\begin{subfigure}[b]{0.3\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_N_3_graph_2.png}
-	    \caption{$K=1.0$}
 	\end{subfigure}
 	\caption{raraara}
     \end{figure*}
-
 
 \end{document}
