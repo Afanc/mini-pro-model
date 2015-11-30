@@ -48,17 +48,16 @@
     Introduction to the article goes here    Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here Introduction to the article goes here \\
 
 \section{The Model}
-\twocolumn[{
-    \centering
-    \Large{\textbf{Part A - One-cell Model}}
-}]
-
+    \begin{figure*}[!htb] 		%oh my god this is so ugly pls don't look at me
+	\captionsetup{labelformat=empty}
+	\caption{\Huge{\textbf{Part A - One-Cell Model}}}
+    \end{figure*}
     \begin{figure*}[!htb]
 	\begin{subfigure}[b]{0.5\textwidth}
 	    \includegraphics[width=\textwidth]{sketch.png}
 	    \caption{
 		One-Cell Model\\
-	    The gene $X$ codes for protein $Y$ which, in turn, activates transcriptional inhibitor $Z$. The resulting model behaves as a three-variable oscillator.
+	    The gene mRNA $X$ codes for protein $Y$ which, in turn, activates transcriptional inhibitor $Z$. The resulting model behaves as a three-variable oscillator.
 	    }
 	\end{subfigure}
 	~
@@ -67,14 +66,15 @@
 	    \begin{equation*}\frac{\delta Y}{\delta t} = k_3 X - v_4 \frac{Y}{K_4 + Y}\end{equation*}
 	    \begin{equation*}\frac{\delta Z}{\delta t} = k_5 Y - v_6 \frac{Z}{K_6 + Z}\end{equation*}
 
+	    \captionsetup{labelformat=empty}
 	    \caption{\\
-	    \begin{tabular}{@{}>{$}l<{$}l@{}}
-		v_1 & this is\\
-		v_2 & \\
-		k_3 & \\
-		v_4 & \\
-		k_5 & \\
-		v_6 & \\
+	    \begin{tabular}{@{}>{$}l<{$}l @{\hskip 0.2cm} | @{\hskip 0.2cm} @{}>{$}l<{$}l@{}}
+		v_1 & translation rate of $X$ & K_1 & Michaelis constant of $X$ \\
+		v_2 & degradation rate of $X$ & K_4 & Michaelis constant of $Y$ \\
+		v_4 & degradation rate of $Y$ & K_6 & Michaelis constant of $Z$\\
+		v_6 & degradation rate of $Z$ &&\\
+		k_3 & transcription rate of $X$ && \\
+		k_5 & transcription rate of $Z$ &&\\
 	    \end{tabular}
 	    }
 	\end{subfigure}
@@ -211,12 +211,17 @@
 	    }
     \end{figure*}
 
+    \begin{figure*}[!htb] 		%oh my god this is so ugly pls don't look at me
+	\captionsetup{labelformat=empty}
+	\caption{\Huge{\textbf{Part B - Multiple Cells Model}}}
+    \end{figure*}
+
     \begin{figure*}[!h]
 	\begin{subfigure}[b]{0.5\textwidth}
-	    \includegraphics[width=\textwidth]{sketch.png}
+	    \includegraphics[width=\textwidth]{sketch2.png}
 	    \caption{
 		Multiple Cells Model\\
-	    The gene $X$ codes for protein $Y$ which, in turn, activates transcriptional inhibitor $Z$. The resulting model behaves as a three-variable oscillator. \red{and then shit happens TODO}
+	    The gene $X$ codes for protein $Y$ which, in turn, activates transcriptional inhibitor $Z$. In addition, gene $X$ activates a positive feedback loop through the mean concentration of extracellular protein $V$
 	    }
 	\end{subfigure}
 	~
@@ -227,15 +232,16 @@
 	    \begin{equation*}\frac{\delta V_i}{\delta t} = k_7 X_i - v_8 \frac{V_i}{K_8 + V_i}\end{equation*}
 	    \begin{equation*}\text{where } F = \frac{1}{N}\sum_{i=1}^{N}V_i\end{equation*}
 
-
+	    \captionsetup{labelformat=empty}
 	    \caption{\\
-	    \begin{tabular}{@{}>{$}l<{$}l@{}}
-		v_1 & this is\\
-		v_2 & \\
-		k_3 & \\
-		v_4 & \\
-		k_5 & \\
-		v_6 & \\
+	    \begin{tabular}{@{}>{$}l<{$}l @{\hskip 0.2cm} | @{\hskip 0.2cm} @{}>{$}l<{$}l@{}}
+		v_1 & translation rate of $X$ & k_7 & transcription rate of $V$ \\
+		v_2 & degradation rate of $X$ &	k_1 & transcription rate of $X$ \\
+		v_4 & degradation rate of $Y$ & K_4 & Michaelis constant of $Y$ \\
+		v_6 & degradation rate of $Z$ & K_6 & Michaelis constant of $Z$ \\
+		v_8 & degradation rate of $V$ & K_8 & Michaelis constant of $V$ \\
+		k_3 & transcription rate of $X$ & K & Coupling Constant \\
+		k_5 & transcription rate of $Z$ && \\
 	    \end{tabular}
 	    }
 	\end{subfigure}
@@ -246,138 +252,140 @@
     \centering
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B11.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B12.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.2 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.2 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B13.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.4 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.4 [$h^{-1}$]}
 	\end{subfigure}
 	 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B14.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.6 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.6 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B15.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.8 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.8 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B16.png}
-	    \caption{$L_1$ = 1, $L_2$ = 2 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
-	\caption{$X_1$ and $X_2$ trajectories \\
-	\red{I don't really know what to say except 'wow it's cool'}}
+	\caption{$X_1$ and $X_2$ trajectories with varying $\lambda_i$ in a two-cells Model\\
+	\red{I don't really know what to say except 'wow it's cool' + square is max/min of Xs}}
     \end{figure*}
 
     \begin{figure*}
     \centering
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B21.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B22.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.2 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.2 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B23.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.4 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.4 [$h^{-1}$]}
 	\end{subfigure}
 	 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B24.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.6 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.6 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B25.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.8 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.8 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B26.png}
-	    \caption{$L_1$ = 1, $L_2$ = 2 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
-	\caption{\red{$X_1(t)$} and \blue{$X_2(t)$} trajectories}
+	\caption{\red{$X_1(t)$} and \blue{$X_2(t)$} trajectories in a two-cells Model \\
+	We observe that }
     \end{figure*}
 
     \begin{figure*}
     \centering
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B31.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B32.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.2 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.2 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B33.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.4 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.4 [$h^{-1}$]}
 	\end{subfigure}
 	 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B34.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.6 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.6 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B35.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.8 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.8 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B36.png}
-	    \caption{$L_1$ = 1, $L_2$ = 2 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
-	\caption{raraara}
+	\caption{$X_1$ and $Y_2$ trajectories \\
+	}
     \end{figure*}
 
     \begin{figure*}
     \centering
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B41.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B42.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.2 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.2 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B43.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.4 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.4 [$h^{-1}$]}
 	\end{subfigure}
 	 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B44.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.6 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.6 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B45.png}
-	    \caption{$L_1$ = 1, $L_2$ = 1.8 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 1.8 [$h^{-1}$]}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B46.png}
-	    \caption{$L_1$ = 1, $L_2$ = 2 [$h^{-1}$]}
+	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
 	\caption{raraara}
@@ -392,7 +400,7 @@
 	~ 
 	\begin{subfigure}[b]{0.45\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/100cells/100cells0_5.png}
-	    \caption{$K=0.45$}
+	    \caption{$K=0.5$}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.45\textwidth}
