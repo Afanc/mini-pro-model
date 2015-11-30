@@ -28,13 +28,10 @@ K=C;
 L=V;
 oscillators=N;
 Amatrix=A;
-sumA=sum(Amatrix(:));
-sumA=sumA/N;
+sumA=sum(Amatrix);
 
 %Calls on a nested function to return a functionhandle to ode45
 df=@nestedB;
-
-
             
     function dy=nestedB(t,y)
         dy= zeros(oscillators*4,1);
@@ -46,8 +43,12 @@ df=@nestedB;
         for j=1:oscillators
             F(number)=F(number)+Amatrix(j,number)*(y(j*4));
         end
+        if sumA(number)==0
+            F(number)=0;
+        else
+            F(number)=F(number)/sumA(number);
         end
-        F=F/sumA;
+        end
  
         %shifts all parameters by 4
         for i=1:oscillators

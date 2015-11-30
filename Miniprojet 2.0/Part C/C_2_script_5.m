@@ -7,13 +7,6 @@ close all;
 Width=8;
 Length=20;
 N=Width*Length;
-Position=zeros(2,N);
-for counter1=1:Width
-    for counter2=1:Length
-        Position(1,counter2+(counter1-1)*Length)=counter1;
-        Position(2,counter2+(counter1-1)*Length)=counter2;
-    end
-end
         
 %Initialization of periods around mu with sigma standard deviation
 V=zeros(1,N); 
@@ -28,7 +21,7 @@ for clic=1:Width
     end
 end
   
-Timedelta=[0,360]; %Time interval in which the script simulates the system
+Timedelta=[0,180]; %Time interval in which the script simulates the system
 
 %Allows to set initial conditions of X,Y,Z for all cells (not only if N=2.
 Initial=zeros(1,N*4);
@@ -50,7 +43,7 @@ A=ones(N);
 
 %Makes a gif
 figure();
-filename = 'C_2_gif_5.gif';
+filename = 'C_2_gif_3.gif';
 sizeT=size(T);
 stepsize=5;
 for time=1:stepsize:sizeT
@@ -67,7 +60,7 @@ end
 imagesc(P);
 caxis([0.0,0.4]);
 clb=colorbar;
-title(['Visualisation of the X values of ' num2str(N) ' cells.']);
+title(['X values of ' num2str(N) ' cells with A full of ones and gradient of periods.']);
 ylabel('x: Width');
 xlabel('y: Length');
 clb.Label.String = 'Concentration of X (in nM)';

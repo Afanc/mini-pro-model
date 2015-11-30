@@ -7,13 +7,6 @@ close all;
 Width=8;
 Length=16;
 N=Width*Length;
-Position=zeros(2,N);
-for counter1=1:Width
-    for counter2=1:Length
-        Position(1,counter2+(counter1-1)*Length)=counter1;
-        Position(2,counter2+(counter1-1)*Length)=counter2;
-    end
-end
         
 %Initialization of periods around mu with sigma standard deviation
 V=zeros(1,N); 
@@ -38,7 +31,7 @@ options=odeset('RelTol',1e-6);
 
 C=1.5; %Coupling strength
 
-A=zeros(N);
+A=ones(N);
 
 %Simulates the system
 [T,Y]=ode45(DifferentialSystemC_2(N,C,V,A),Timedelta,Initial,options);
@@ -48,7 +41,7 @@ figure();
 filename = 'C_2_gif_2.gif';
 sizeT=size(T);
 stepsize=10;
-subplot(1,2,1)
+%subplot(1,2,1)
 for time=1:stepsize:sizeT
     
 P=zeros(Width,Length);
@@ -62,7 +55,7 @@ end
 imagesc(P);
 caxis([0.0,0.4]);
 clb=colorbar;
-title(['Visualisation of the X values of ' num2str(N) ' cells.']);
+title(['X values with N=' num2str(N) ' with A full of ones for T=' num2str(Timedelta(2)) '.']);
 ylabel('x: Width');
 xlabel('y: Length');
 clb.Label.String = 'Concentration of X (in nM)';
@@ -78,17 +71,17 @@ end
         
 end
 
-subplot(1,2,2);
-for t=1:N
+%subplot(1,2,2);
+%for t=1:N
+%    
+%    plot(T,Y(:,1+((t-1)*4)),'-')
+%    title(['Evolution of X1, X2 etc over time'] );
+%    xlabel('Time[h]');
+%    ylabel('Amount in [nM]');
+%    grid on;
+%    hold on;
     
-    plot(T,Y(:,1+((t-1)*4)),'-')
-    title(['Evolution of X1, X2 etc over time'] );
-    xlabel('Time[h]');
-    ylabel('Amount in [nM]');
-    grid on;
-    hold on;
-    
-end
+%end
 
     
 

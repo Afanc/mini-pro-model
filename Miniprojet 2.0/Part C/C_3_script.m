@@ -4,35 +4,27 @@ clear all;
 close all;
 
 %Initializes positions of the cells and their number
-Width=2;
-Length=3;
+Width=10;
+Length=10;
 N=Width*Length;
-Position1=zeros(2,N);
-Position2=zeros(2,N);
-for counter1=1:Width
-    for counter2=1:Length
-        Position1(1,counter2+(counter1-1)*Length)=counter1;
-        Position2(1,counter2+(counter1-1)*Length)=counter1;
-        Position1(2,counter2+(counter1-1)*Length)=counter2;
-        Position1(2,counter2+(counter1-1)*Length)=counter2;
-    end
-end
+
         
 %Initialization of periods around mu with sigma standard deviation
 V=zeros(1,2*N); 
 lambdamin=0.9;
 lambdamax=1.1;
 lambdavector=linspace(lambdamin,lambdamax,Length);
+Lambdurr=1.15;
 for clic=1:Width
     for clic2=1:Length
         mu=lambdavector(clic2);
-        sigma=0.05;
+        sigma=0.02;
         V(clic2+(clic-1)*Length)=normrnd(mu,sigma);
-        V(N+clic2+(clic-1)*Length)=normrnd(1.5*mu,sigma);
+        V(N+clic2+(clic-1)*Length)=normrnd(Lambdurr*mu,sigma);
     end
 end
 
-Timedelta=[0,400]; %Time interval in which the script simulates the system
+Timedelta=[0,180]; %Time interval in which the script simulates the system
 
 %Allows to set initial conditions of X,Y,Z for all cells (not only if N=2.
 Initial=zeros(1,2*N*4);
@@ -47,29 +39,36 @@ options=odeset('RelTol',1e-6);
 
 C=1.5; %Coupling strength
 
-A=ones(N); %Coupling matrix
-Ainter=zeros(N);
+A=zeros(N); %Coupling matrix
+Ainter=ones(N);
 
-%for cN=1:N
-%    for cN2=1:N
-%        g=cN-cN2;
-%        f=cN2-cN;
-%        if cN==cN2 || f==1 || g==1 || f==Length || g==Length || f==Length-1 ||g==Length-1 || f==Length+1 || g==Length+1 
-%            A(cN,cN2)=1;
-%        else
-%            A(cN,cN2)=0;
-%        end
-%    end
-%end
+A=zeros(N); %Coupling matrix
+for cN1=1:N
+    for cN2=1:N
+        g=cN1-cN2;
+        f=cN2-cN1;
+        if ((floor((cN1-1)/Length)+1)/(floor((cN2-1)/Length)+1)) == 1
+
+            if cN1==cN2 || f==1 || g==1 || f==Length || g==Length 
+                A(cN1,cN2)=1;
+            end
+        else
+            if cN1==cN2 || f==Length || g==Length
+                A(cN1,cN2)=1;
+            end
+        end
+    end
+end
+
 
 %Simulates the system
 [T,Y]=ode45(DifferentialSystemC_3(N,C,V,A,Ainter),Timedelta,Initial,options);
 
 %Makes a gif
 figure();
-filename = 'C_2_gif_5.gif';
+filename = 'C_2_gif_6.gif';
 sizeT=size(T);
-stepsize=500;
+stepsize=5;
 for time=1:stepsize:sizeT
     
 P1=zeros(Width,Length);
@@ -80,11 +79,11 @@ for c1=1:Width
         P1(c1,c2)=Xcoord;   
     end
 end
-subplot(1,2,1);
+subplot(2,1,1);
 imagesc(P1);
 caxis([0.0,0.5]);
 clb=colorbar;
-title(['Visualisation of population 1 with ' num2str(N) ' cells.']);
+title(['Population 1 with ' num2str(N) ' cells and Lambda=1.']);
 ylabel('x: Width');
 xlabel('y: Length');
 clb.Label.String = 'Concentration of X (in nM)';
@@ -98,11 +97,11 @@ for c3=1:Width
     end
 end
 
-subplot(1,2,2);
+subplot(2,1,2);
 imagesc(P2);
 caxis([0.0,0.5]);
 clb2=colorbar;
-title(['Visualisation of population 2 with ' num2str(N) ' cells.']);
+title(['Population 2 with ' num2str(N) ' cells and Lambda=' num2str(Lambdurr) '.']);
 ylabel('x: Width');
 xlabel('y: Length');
 clb2.Label.String = 'Concentration of X (in nM)';
@@ -134,7 +133,7 @@ end
 
 
 figure();
-for t=N:2*N
+for t=N+1:2*N
     
     plot(T,Y(:,1+((t-1)*4)),'-')
     title(['Evolution of X1, X2 etc over time'] );

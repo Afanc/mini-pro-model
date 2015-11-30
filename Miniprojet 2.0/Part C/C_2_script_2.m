@@ -9,13 +9,6 @@ close all;
 Width=10;
 Length=14;
 N=Width*Length;
-Position=zeros(2,N);
-for counter1=1:Width
-    for counter2=1:Length
-        Position(1,counter2+(counter1-1)*Length)=counter1;
-        Position(2,counter2+(counter1-1)*Length)=counter2;
-    end
-end
         
 %Initialization of periods around mu with sigma standard deviation
 V=zeros(1,N); 
@@ -39,12 +32,13 @@ end
 options=odeset('RelTol',1e-6);
 
 C=1; %Coupling strength
-A=zeros(N);
+A=ones(N);
 
 %Simulates the system
 [T,Y]=ode45(DifferentialSystemC_2(N,C,V,A),Timedelta,Initial,options);
 
 figure();
+subplot(1,2,1);
 P=zeros(Width,Length);
 for c1=1:Width
     for c2=1:Length
@@ -57,12 +51,12 @@ end
 imagesc(P);
 caxis([0.0,0.35]);
 clb=colorbar;
-title(['Visualisation of the X values of ' num2str(N) ' cells at end of simulation']);
+title(['Xvalues with correlation matrix full of ones at T=' num2str(Timedelta(2)) '.']);
 ylabel('x: Width');
 xlabel('y: Length');
 clb.Label.String = 'Concentration of X (in nM)';
 
-figure();
+subplot(1,2,2);
 for t=1:N
     
     plot(T,Y(:,1+((t-1)*4)),'-')

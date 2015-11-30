@@ -4,16 +4,9 @@ clear all;
 close all;
 
 %Initializes positions of the cells and their number
-Width=12;
-Length=18;
+Width=10;
+Length=10;
 N=Width*Length;
-Position=zeros(2,N);
-for counter1=1:Width
-    for counter2=1:Length
-        Position(1,counter2+(counter1-1)*Length)=counter1;
-        Position(2,counter2+(counter1-1)*Length)=counter2;
-    end
-end
         
 %Initialization of periods around mu with sigma standard deviation
 V=zeros(1,N); 
@@ -23,12 +16,12 @@ lambdavector=linspace(lambdamin,lambdamax,Length);
 for clic=1:Width
     for clic2=1:Length
         mu=lambdavector(clic2);
-        sigma=0.1/N;
+        sigma=0.005;
         V(clic2+(clic-1)*Length)=normrnd(mu,sigma);
     end
 end
   
-Timedelta=[0,700]; %Time interval in which the script simulates the system
+Timedelta=[0,180]; %Time interval in which the script simulates the system
 
 %Allows to set initial conditions of X,Y,Z for all cells (not only if N=2.
 Initial=zeros(1,N*4);
@@ -44,14 +37,19 @@ options=odeset('RelTol',1e-6);
 C=1.5; %Coupling strength
 
 A=zeros(N); %Coupling matrix
-for cN=1:N
+for cN1=1:N
     for cN2=1:N
-        g=cN-cN2;
-        f=cN2-cN;
-        if cN==cN2 || f==1 || g==1 || f==Length || g==Length || f==Length-1 ||g==Length-1 || f==Length+1 || g==Length+1 
-            A(cN,cN2)=1;
+        g=cN1-cN2;
+        f=cN2-cN1;
+        if ((floor((cN1-1)/Length)+1)/(floor((cN2-1)/Length)+1)) == 1
+
+            if cN1==cN2 || f==1 || g==1 || f==Length || g==Length %|| f==Length-1 ||g==Length-1 || f==Length+1 || g==Length+1 
+                A(cN1,cN2)=1;
+            end
         else
-            A(cN,cN2)=0;
+            if cN1==cN2 || f==Length || g==Length
+                A(cN1,cN2)=1;
+            end
         end
     end
 end
@@ -61,9 +59,9 @@ end
 
 %Makes a gif
 figure();
-filename = 'C_2_gif_5.gif';
+filename = 'C_2_gif_4.gif';
 sizeT=size(T);
-stepsize=50;
+stepsize=5;
 for time=1:stepsize:sizeT
     
 P=zeros(Width,Length);
@@ -78,7 +76,7 @@ end
 imagesc(P);
 caxis([0.0,0.4]);
 clb=colorbar;
-title(['Visualisation of the X values of ' num2str(N) ' cells.']);
+title(['X values of ' num2str(N) ' cells with neighbour connection.']);
 ylabel('x: Width');
 xlabel('y: Length');
 clb.Label.String = 'Concentration of X (in nM)';
