@@ -45,18 +45,9 @@
 	}]
 
 \section{Introduction}
-    The periodic changes that come about due to the day-night cycle to things ranging from visibility to temperature create an environment in which it is advantageous to adapt behaviour to this extrinsic period. Perhaps vision becomes so restricted in the night that basic processes like hunting for food or looking for mates become so inefficient that it's a better strategy to conserve energy when it's dark. Perhaps the opposite is the case and hunting during the night becomes an advantage due to specially evolved senses in animals such as, for example, bats.
-    
-    For this reason many different lifeforms, from bacteria to animals, have adapted to the 24 hour period that exists around them by synchronising behaviour and processes in different tissues to the day-night cycle by keeping track of time using internal 'clocks'.
-    
-    In humans this clock works by having a part of the brain, called the suprachiasmatic nuclei (SCN), manage the production of several clock proteins in such a way as to create oscillatory patterns in the concentration of these proteins. These patterns are called circadian when they follow the 24-hour period of the earth's rotation. 
-    
-    Negative feedback loops are used in such a way as to create a periodic rise and fall in the production of proteins that can be influenced by external factors such a light intensity and food uptake to regularly adjust the synchronisation to new environments. \\
+    Introduction to the article goes here    Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here Introduction to the article goes here \\
 
 \section{The Model}
-In this simplified model of the SCN we do not take into account such outside signals and instead focus on behaviours of cells in the SCN all by themselves. The model looks at the production of clock gene mRNA (designated as X), which leads to production of a clock protein(Y). This clock gene protein activates transcription of a third compound (Z), which acts as a transcriptional inhibitor of X, thus creating a negative feedback loop.
-    
-    In this report we examine several conditions that need to be met for this simple model to exhibit circadian oscillations in the concentrations of the compounds involved. This model is then expanded to investigate synchronisation between cells by taking into account a third protein (V) that is exported and allows the cells in the SCN to talk to each other. First taking into account only 2 cells, this model is expanded to hundreds of cells later on, not reaching the human population of cells in the SCN of 10'000, but at least providing a smaller model that could be scaled up to that number if more processing power was available. \\
     \begin{figure*}[!htb] 		%oh my god this is so ugly pls don't look at me
 	\captionsetup{labelformat=empty}
 	\caption{\Huge{\textbf{Part A - One-Cell Model}}}
@@ -175,37 +166,37 @@ In this simplified model of the SCN we do not take into account such outside sig
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA1.png}
-	    \caption{$v_1$ = 1 nM/h}
+	    \caption{$v_1$ = 0.1 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA2.png}
-	    \caption{$v_1$ = 2 nM/h}
+	    \caption{$v_1$ = 0.2 nM/h}
 	\end{subfigure}
 	 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA3.png}
-	    \caption{$v_1$ = 3 nM/h}
+	    \caption{$v_1$ = 0.3 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA4.png}
-	    \caption{$v_1$ = 4 nM/h}
+	    \caption{$v_1$ = 0.4 nM/h}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA6.png}
-	    \caption{$v_1$ = 6 nM/h}
+	    \caption{$v_1$ = 0.6 nM/h}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA7.png}
-	    \caption{$v_1$ = 8 nM/h}
+	    \caption{$v_1$ = 0.8 nM/h}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{0.32\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA10.png}
-	    \caption{$v_1$ = 10 nM/h}
+	    \caption{$v_1$ = 1 nM/h}
 	\end{subfigure}
 	
 	\caption{Trajectories when varying $v_1$ with initial conditions $X_0 = 0.16$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\
@@ -290,9 +281,7 @@ In this simplified model of the SCN we do not take into account such outside sig
 	\end{subfigure}
 
 	\caption{$X_1$ and $X_2$ trajectories with varying $\lambda_i$ in a two-cells Model\\
-	With unequal periods, the limit cycles of both cells aren't in phase and form these '8' patterns. The box that appears directly gives us the maximum values of $X_1$ and $X_2$
-
-	\red{I don't really know what to say except 'wow it's cool' + square is max/min of Xs}}
+	Figure (a), the control, makes perfect sense since the two cells have the same period, hence the exact same signal. With unequal periods, the limit cycles of both cells aren't in phase and form these '8' patterns. The box that appears represent the variation of $X_1$ and $X_2$ and therefore directly gives us their minimal and maximal values.}
     \end{figure*}
 
     \begin{figure*}
