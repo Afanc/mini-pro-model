@@ -15,33 +15,45 @@
     \captionsetup{justification=centering}
     \usepackage{subcaption}
     \usepackage{array}
+    \usepackage{titlesec}
+    \titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
 
     \newcommand{\red}[1]{\textcolor{red}{#1}} 
     \newcommand{\cyan}[1]{\textcolor{cyan}{#1}} 
+    \newcommand{\blue}[1]{\textcolor{blue}{#1}} 
     \newcommand{\orange}[1]{\textcolor{orange}{#1}} 
     \newcommand{\purple}[1]{\textcolor{purple}{#1}} 
+    \newcommand{\green}[1]{\textcolor{green}{#1}} 
     \definecolor{forestgreen}{RGB}{0,102,0}
-    \newcommand{\green}[1]{\textcolor{forestgreen}{#1}} 
+    \newcommand{\fgreen}[1]{\textcolor{forestgreen}{#1}} 
 
     \numberwithin{equation}{section} %permits numbering within sections instead of globally
 \begin{document}
 
-\title{\huge{\textbf{Report}}\\
+\title{\huge{\textbf{Mini-Project in Mathematical and Computational Modeling}}\\
 	\vspace{0.5cm}
 	\Large{\textit{\'Ecole Polytechnique F\'ed\'erale de Lausanne, Switzerland}}}
 \author{\large{Florian + Dariush}}
-
-\begin{titlepage}
- \maketitle
-\thispagestyle{empty}
-\end{titlepage}
+\twocolumn[{
+    \centering
+    \huge{\textbf{Mini-Project in Mathematical and Computational Modeling}} \\
+    \vspace{0.5cm}
+    \Large{\textit{\'Ecole Polytechnique F\'ed\'erale de Lausanne, Switzerland}}\\
+    \vspace{0.5cm}
+    \large{Florian + Dariush}
+    \vspace{1cm}
+	}]
 
 \section{Introduction}
     Introduction to the article goes here    Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here  Introduction to the article goes here Introduction to the article goes here \\
 
 \section{The Model}
+\twocolumn[{
+    \centering
+    \Large{\textbf{Part A - One-cell Model}}
+}]
 
-    \begin{figure*}[!h]
+    \begin{figure*}[!htb]
 	\begin{subfigure}[b]{0.5\textwidth}
 	    \includegraphics[width=\textwidth]{sketch.png}
 	    \caption{
@@ -80,54 +92,7 @@
 	    \caption{Frequency spectrum \\
 	    The amplitude of the three variations stabilize after a few hundred hours. The signal are not in phase but have the same, regular, frequencies.}
 	\end{subfigure}
-	\caption{\\Trajectories of $X(t)$, $Y(t)$ and $Z(t)$ with initial conditions : $X_0 = .016$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\ We observe on both graphs that $Z(t)$ has the bigger amplitude of variation whereas $X(t)$ and $Y(t)$ have small amplitudes. Additionaly, the convergence towards a single loop in (a) indicate that the frequencies of the signals are equal; this is illustrated as well in (b)
-	}
-    \end{figure*}
-
-    \begin{figure*}
-    \centering
-	\begin{subfigure}[b]{0.32\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA0.png}
-	    \caption{$v_1$ = 0 nM/h}
-	\end{subfigure}
-	~ 
-	\begin{subfigure}[b]{0.32\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA1.png}
-	    \caption{$v_1$ = 1 nM/h}
-	\end{subfigure}
-	~ 
-	\begin{subfigure}[b]{0.32\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA2.png}
-	    \caption{$v_1$ = 2 nM/h}
-	\end{subfigure}
-	 
-	\begin{subfigure}[b]{0.32\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA3.png}
-	    \caption{$v_1$ = 3 nM/h}
-	\end{subfigure}
-	~ 
-	\begin{subfigure}[b]{0.32\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA4.png}
-	    \caption{$v_1$ = 4 nM/h}
-	\end{subfigure}
-	~
-	\begin{subfigure}[b]{0.32\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA6.png}
-	    \caption{$v_1$ = 6 nM/h}
-	\end{subfigure}
-	~ 
-	\begin{subfigure}[b]{0.32\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA7.png}
-	    \caption{$v_1$ = 8 nM/h}
-	\end{subfigure}
-	~
-	\begin{subfigure}[b]{0.32\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA10.png}
-	    \caption{$v_1$ = 10 nM/h}
-	\end{subfigure}
-	
-	\caption{Trajectories when varying $v_1$ with initial conditions $X_0 = .016$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\
-	$v_1$ has to reach a certain value for $X(t)$ to be able to compensate its inhibition by $Z(t)$ and therefore for the system to reach a limit cycle. We observe that this value is slightly greater than 4nM/h, as the trajectories still converge to null in (e); there is an 'eye', even though it is smaller than in (f) and (g), since the timescale is not big enough to let the system dissipate completely.
+	\caption{\\Trajectories of $X(t)$, $Y(t)$ and $Z(t)$ with initial conditions : $X_0 = 0.16$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\ We observe on both graphs that $Z(t)$ has the bigger amplitude of variation whereas $X(t)$ and $Y(t)$ have small amplitudes. Additionaly, the convergence towards a single loop in (a) indicate that the frequencies of the signals are equal; this is illustrated as well in (b)
 	}
     \end{figure*}
 
@@ -173,27 +138,299 @@
 	    \caption{$v_1$ = 10 nM/h}
 	\end{subfigure}
 
-	\caption{With nice initial conditions}
+	\caption{\green{$X(t)$}, \red{$Y(t)$} and \blue{$Z(t)$} with initial conditions $X_0 = 0.16$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\
+	The first signal to fade is $Y(t)$ and its oscillatory stability predicts stability of the system. We also observe that the signals converge towards null or the limit cycle in a non-linear fashion. \red{At the opposite, it is rather difficult to predict the threshold value of $v_1$ using those plots ?}}
+    \end{figure*}
+
+    \begin{figure*}
+	\centering
+	    \begin{subfigure}[b]{0.43\textwidth}
+		\includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/Bifurcation.png}
+		\caption{at $h_{max}=1000$ h}
+	    \end{subfigure}
+	     ~ 
+	    \begin{subfigure}[b]{0.43\textwidth}
+		\includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/Bifurcation10000.png}
+		\caption{at $h_{max}=10~000$ h}
+	    \end{subfigure}
+	    \caption{Bifurcation Diagram : \red{$X_{min}$} and \green{$X_{max}$} plotted at time intervals $[9/10; 1]$ of $h_{max}$ \\
+	    A limit cycle might be reached when $X_{min} \neq X_{max}$. However, the system needs to be run for enough time for the cycle to be reached, as the (a) suggests. (b) illustrates the non-linear convergence of the system; also the threshold for $v_1$ seems to be around 4.5}
+    \end{figure*}
+
+    \begin{figure*}
+    \centering
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA0.png}
+	    \caption{$v_1$ = 0 nM/h}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA1.png}
+	    \caption{$v_1$ = 1 nM/h}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA2.png}
+	    \caption{$v_1$ = 2 nM/h}
+	\end{subfigure}
+	 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA3.png}
+	    \caption{$v_1$ = 3 nM/h}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA4.png}
+	    \caption{$v_1$ = 4 nM/h}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA6.png}
+	    \caption{$v_1$ = 6 nM/h}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA7.png}
+	    \caption{$v_1$ = 8 nM/h}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/A_3_graphs/A-AA10.png}
+	    \caption{$v_1$ = 10 nM/h}
+	\end{subfigure}
+	
+	\caption{Trajectories when varying $v_1$ with initial conditions $X_0 = 0.16$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\
+	$v_1$ has to reach a certain value for $X(t)$ to be able to compensate its inhibition by $Z(t)$ and therefore for the system to reach a limit cycle. We observe that this value is slightly greater than 4nM/h, as the trajectories still converge to null in (e); there is an 'eye', even though it is smaller than in (f) and (g), since the timescale is not big enough to let the system dissipate completely.
+	}
     \end{figure*}
 
     \begin{figure*}
 	\centering
 	    \includegraphics[width=0.5\textwidth]{"../Miniprojet 2.0/Part A/A2.png}
-	    \caption{$v_1$ = \cyan{0.1}/\red{0.3}/\orange{0.5}/\purple{0.7}/\green{0.9} nM/h}
+	    \caption{Superimposed trajectories at late timepoints with initial conditions $X_0 = 0.16$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM] and $v_1$ = \cyan{0.1}/\red{0.3}/\orange{0.5}/\purple{0.7}/\fgreen{0.9} nM/h. We observe here that $Z(t)$ tends to reach greater concentration stability with increasing $v_1$.
+	    }
+    \end{figure*}
+
+    \begin{figure*}[!h]
+	\begin{subfigure}[b]{0.5\textwidth}
+	    \includegraphics[width=\textwidth]{sketch.png}
+	    \caption{
+		Multiple Cells Model\\
+	    The gene $X$ codes for protein $Y$ which, in turn, activates transcriptional inhibitor $Z$. The resulting model behaves as a three-variable oscillator. \red{and then shit happens TODO}
+	    }
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.5\textwidth}
+	    \begin{equation*}\frac{\delta X}{\delta t} = v_1 \frac{K_1^n}{K_1^n + Z^n} - v_2 \frac{X}{K_2 + X} + v_c\frac{KF}{K_c + KF}\end{equation*}
+	    \begin{equation*}\frac{\delta Y}{\delta t} = k_3 X - v_4 \frac{Y}{K_4 + Y}\end{equation*}
+	    \begin{equation*}\frac{\delta Z}{\delta t} = k_5 Y - v_6 \frac{Z}{K_6 + Z}\end{equation*}
+	    \begin{equation*}\frac{\delta V_i}{\delta t} = k_7 X_i - v_8 \frac{V_i}{K_8 + V_i}\end{equation*}
+	    \begin{equation*}\text{where } F = \frac{1}{N}\sum_{i=1}^{N}V_i\end{equation*}
+
+
+	    \caption{\\
+	    \begin{tabular}{@{}>{$}l<{$}l@{}}
+		v_1 & this is\\
+		v_2 & \\
+		k_3 & \\
+		v_4 & \\
+		k_5 & \\
+		v_6 & \\
+	    \end{tabular}
+	    }
+	\end{subfigure}
+    \end{figure*}
+
+
+    \begin{figure*}
+    \centering
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B11.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B12.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.2 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B13.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.4 [$h^{-1}$]}
+	\end{subfigure}
+	 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B14.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.6 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B15.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.8 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B16.png}
+	    \caption{$L_1$ = 1, $L_2$ = 2 [$h^{-1}$]}
+	\end{subfigure}
+
+	\caption{$X_1$ and $X_2$ trajectories \\
+	\red{I don't really know what to say except 'wow it's cool'}}
     \end{figure*}
 
     \begin{figure*}
-	\centering
-	    \begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/Bifurcation.png}
-		\caption{at $h_{max}=1000$}
-	    \end{subfigure}
-	     ~ 
-	    \begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/Bifurcation10000.png}
-		\caption{at $h_{max}=10000$}
-	    \end{subfigure}
-	    \caption{Bifurcation Diagram\\ plotted at time intervals : $[9/10; 1]$ of $h_{max}$}
+    \centering
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B21.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B22.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.2 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B23.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.4 [$h^{-1}$]}
+	\end{subfigure}
+	 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B24.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.6 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B25.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.8 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B26.png}
+	    \caption{$L_1$ = 1, $L_2$ = 2 [$h^{-1}$]}
+	\end{subfigure}
+
+	\caption{\red{$X_1(t)$} and \blue{$X_2(t)$} trajectories}
     \end{figure*}
+
+    \begin{figure*}
+    \centering
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B31.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B32.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.2 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B33.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.4 [$h^{-1}$]}
+	\end{subfigure}
+	 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B34.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.6 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B35.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.8 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B36.png}
+	    \caption{$L_1$ = 1, $L_2$ = 2 [$h^{-1}$]}
+	\end{subfigure}
+
+	\caption{raraara}
+    \end{figure*}
+
+    \begin{figure*}
+    \centering
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B41.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B42.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.2 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B43.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.4 [$h^{-1}$]}
+	\end{subfigure}
+	 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B44.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.6 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B45.png}
+	    \caption{$L_1$ = 1, $L_2$ = 1.8 [$h^{-1}$]}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.32\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_graphs/B46.png}
+	    \caption{$L_1$ = 1, $L_2$ = 2 [$h^{-1}$]}
+	\end{subfigure}
+
+	\caption{raraara}
+    \end{figure*}
+
+    \begin{figure*}
+    \centering
+	\begin{subfigure}[b]{0.45\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/100cells/100cells0_0.png}
+	    \caption{$K=0.0$}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.45\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/100cells/100cells0_5.png}
+	    \caption{$K=0.45$}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.45\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/100cells/100cells1_0.png}
+	    \caption{$K=1.0$}
+	\end{subfigure}
+	 
+	\begin{subfigure}[b]{0.45\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/100cells/100cells1_5a.png}
+	    \caption{$K=1.5$}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.45\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/100cells/100cells1_5b.png}
+	    \caption{$K=1.5$}
+	\end{subfigure}
+
+	\caption{raraara}
+    \end{figure*}
+
+    \begin{figure*}
+    \centering
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation.png}
+	    \caption{$K=0.0$}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png}
+	    \caption{$K=0.3$}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_N_3_graph_2.png}
+	    \caption{$K=1.0$}
+	\end{subfigure}
+	\caption{raraara}
+    \end{figure*}
+
 
 \end{document}
