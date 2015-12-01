@@ -137,22 +137,22 @@
 	\end{subfigure}
 
 	\caption{\green{$X(t)$}, \red{$Y(t)$} and \blue{$Z(t)$} with initial conditions $X_0 = 0.16$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\
-	The first signal to fade is $Y(t)$ and its oscillatory stability predicts stability of the system. We also observe that the signals converge towards null, a fixed point or the limit cycle in a non-linear fashion. {At the opposite, it is rather difficult to predict the threshold value of $v_1$ using those plots ?}}
+	The first signal to fade is $Y(t)$ and its oscillatory stability predicts stability of the system. We also observe that the signals converge towards null, a fixed point or the limit cycle in a non-linear fashion. It is hard to precisely know the value for $v_1$ for which the system begins to display circadian behaviour, but it must be somewhere around $v_1$ = 0.5nM/h. A more accurate estimate will be made in the bifurcation diagram that follows. Interesting here is that the concentrations will reach a stable fixed point if $v_1$ is below a certain threshold. }
     \end{figure*}
 
     \begin{figure*}
 	\centering
 	    \begin{subfigure}[b]{0.43\textwidth}
 		\includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/Bifurcation.png}
-		\caption{at $h_{max}=1000$ h}
+		\caption{at $t_{max}=1000$ h}
 	    \end{subfigure}
 	     ~ 
 	    \begin{subfigure}[b]{0.43\textwidth}
 		\includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/Bifurcation10000.png}
-		\caption{at $h_{max}=10~000$ h}
+		\caption{at $t_{max}=10~000$ h}
 	    \end{subfigure}
-	    \caption{Bifurcation Diagram : \red{$X_{min}$} and \green{$X_{max}$} plotted at time intervals $[9/10; 1]$ of $h_{max}$ \\
-	    A limit cycle might be reached when $X_{min} \neq X_{max}$. However, the system needs to be run for enough time for the cycle to be reached, as the (a) suggests. (b) illustrates the non-linear convergence of the system; also the threshold for $v_1$ seems to be around 4.5}
+	    \caption{Bifurcation Diagram : \red{$X_{min}$} and \green{$X_{max}$} plotted at time intervals $[9/10; 1]$ of $t_{max}$, meaning it plots the maximum and minimum values in the last tenth of the simulation where we are sure that a either a limit cycle or a stable fixed point has already been reached. \\
+	    A limit cycle might be reached when $X_{min} \neq X_{max}$. However, the system needs to be run for enough time for the cycle to be reached, as the (a) suggests. In figure (b) the simulation was run for ten times longer, showing that for values of $v_1$ between 0.2 and 0.4 nM/h, there is very slow oscillatory convergence to a fixed point, which is the same result that is suggested by figure 4 above. The threshold for $v_1$ for the system to reach circadian oscillation seems to be around 0.4 nM/h}
     \end{figure*}
 
     \begin{figure*}
@@ -198,7 +198,7 @@
 	\end{subfigure}
 	
 	\caption{Trajectories when varying $v_1$ with initial conditions $X_0 = 0.16$, $Y_0 = 0.33 $, $Z_0 = 1.8$ [nM]\\
-	$v_1$ has to reach a certain value for $X(t)$ to be able to compensate its inhibition by $Z(t)$ and therefore for the system to reach a limit cycle. We observe that this value is slightly greater than 4nM/h, as the trajectories still converge to null in (e); there is an 'eye', even though it is smaller than in (f) and (g), since the timescale is not big enough to let the system dissipate completely.
+	$v_1$ has to reach a certain value for $X(t)$ to be able to compensate its inhibition by $Z(t)$ and therefore for the system to reach a limit cycle. We observe that this value is around 0.4 nM/h, as the trajectories still converge close to zero in (e); there is an 'eye', even though it is smaller than in (f) and (g). It is possible that the simulation time is not long enough to let the system dissipate completely.
 	}
 	\label{fig:6}
     \end{figure*}
@@ -212,9 +212,9 @@
 	~
 	\begin{subfigure}[b]{0.4\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part A/periodogram.png}
-	    \caption{periodogram}
+	    \caption{Periodogram of the oscillations above with \\ $v_1$ =0.7nM/h.}
 	\end{subfigure}
-	\caption{ooo}
+	\caption{This analysis of the trajectories allows to sample for frequencies that are strongly represented in a set of data points. The simulations above appear to have a strong representation around a frequency that corresponds to a period of 23.4 hours, which is close to the 24 hour circadian rhythm that is observed in nature.}
     \end{figure*}
 
     \begin{figure*}[!htb] 		%oh my god this is so ugly pls don't look at me

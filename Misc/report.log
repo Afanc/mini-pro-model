@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.13)  1 DEC 2015 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.13)  1 DEC 2015 10:56
 entering extended mode
 **report.tex
 (report.tex
@@ -1282,28 +1282,40 @@ n input line 196.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part A/A2.png' not found on input line 
-208.
+209.
 
 <"../Miniprojet 2.0/Part A/A2.png, id=56, 721.94719pt x 429.10312pt>
 File: "../Miniprojet 2.0/Part A/A2.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part A/A2.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part A/A2.png used on input line 20
-8.
-(pdftex.def)             Requested size: 256.07481pt x 152.19844pt.
+9.
+(pdftex.def)             Requested size: 204.85672pt x 121.75876pt.
 
-<sketch2.png, id=57, 1026.83624pt x 633.36626pt>
+
+LaTeX Warning: File `"../Miniprojet 2.0/Part A/periodogram.png' not found on in
+put line 214.
+
+<"../Miniprojet 2.0/Part A/periodogram.png, id=57, 421.575pt x 316.18124pt>
+File: "../Miniprojet 2.0/Part A/periodogram.png Graphic file (type png)
+
+<use "../Miniprojet 2.0/Part A/periodogram.png>
+Package pdftex.def Info: "../Miniprojet 2.0/Part A/periodogram.png used on inpu
+t line 214.
+(pdftex.def)             Requested size: 204.85672pt x 153.64201pt.
+
+<sketch2.png, id=58, 1026.83624pt x 633.36626pt>
 File: sketch2.png Graphic file (type png)
  <use sketch2.png>
-Package pdftex.def Info: sketch2.png used on input line 220.
+Package pdftex.def Info: sketch2.png used on input line 227.
 (pdftex.def)             Requested size: 256.07481pt x 157.94493pt.
 
-Overfull \hbox (12.7497pt too wide) in paragraph at lines 246--246
+Overfull \hbox (12.7497pt too wide) in paragraph at lines 253--253
  [][]| 
  []
 
 
-Overfull \hbox (6.66664pt too wide) in paragraph at lines 219--248
+Overfull \hbox (6.66664pt too wide) in paragraph at lines 226--255
 [][]   [] 
  []
 
@@ -1312,437 +1324,437 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B21.png' not found on
- input line 253.
+ input line 260.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B21.png, id=58, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B21.png, id=59, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B21.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B21.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B21.png used on i
-nput line 253.
+nput line 260.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B22.png' not found on
- input line 258.
+ input line 265.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B22.png, id=59, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B22.png, id=60, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B22.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B22.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B22.png used on i
-nput line 258.
+nput line 265.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B23.png' not found on
- input line 263.
+ input line 270.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B23.png, id=60, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B23.png, id=61, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B23.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B23.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B23.png used on i
-nput line 263.
+nput line 270.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B24.png' not found on
- input line 268.
+ input line 275.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B24.png, id=61, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B24.png, id=62, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B24.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B24.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B24.png used on i
-nput line 268.
+nput line 275.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B25.png' not found on
- input line 273.
+ input line 280.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B25.png, id=62, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B25.png, id=63, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B25.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B25.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B25.png used on i
-nput line 273.
+nput line 280.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B26.png' not found on
- input line 278.
+ input line 285.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B26.png, id=63, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B26.png, id=64, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B26.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B26.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B26.png used on i
-nput line 278.
+nput line 285.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B11.png' not found on
- input line 290.
+ input line 297.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B11.png, id=64, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B11.png, id=65, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B11.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B11.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B11.png used on i
-nput line 290.
+nput line 297.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B12.png' not found on
- input line 295.
+ input line 302.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B12.png, id=65, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B12.png, id=66, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B12.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B12.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B12.png used on i
-nput line 295.
+nput line 302.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B13.png' not found on
- input line 300.
+ input line 307.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B13.png, id=66, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B13.png, id=67, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B13.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B13.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B13.png used on i
-nput line 300.
+nput line 307.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B14.png' not found on
- input line 305.
+ input line 312.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B14.png, id=67, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B14.png, id=68, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B14.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B14.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B14.png used on i
-nput line 305.
+nput line 312.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B15.png' not found on
- input line 310.
+ input line 317.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B15.png, id=68, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B15.png, id=69, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B15.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B15.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B15.png used on i
-nput line 310.
+nput line 317.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B16.png' not found on
- input line 315.
+ input line 322.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B16.png, id=69, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B16.png, id=70, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B16.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B16.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B16.png used on i
-nput line 315.
+nput line 322.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B41.png' not found on
- input line 327.
+ input line 334.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B41.png, id=72, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B41.png, id=73, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B41.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B41.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B41.png used on i
-nput line 327.
+nput line 334.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B42.png' not found on
- input line 332.
+ input line 339.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B42.png, id=73, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B42.png, id=74, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B42.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B42.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B42.png used on i
-nput line 332.
+nput line 339.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B43.png' not found on
- input line 337.
+ input line 344.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B43.png, id=74, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B43.png, id=75, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B43.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B43.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B43.png used on i
-nput line 337.
+nput line 344.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B44.png' not found on
- input line 342.
+ input line 349.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B44.png, id=75, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B44.png, id=76, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B44.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B44.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B44.png used on i
-nput line 342.
+nput line 349.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B45.png' not found on
- input line 347.
+ input line 354.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B45.png, id=76, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B45.png, id=77, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B45.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B45.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B45.png used on i
-nput line 347.
+nput line 354.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B46.png' not found on
- input line 352.
+ input line 359.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B46.png, id=77, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B46.png, id=78, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B46.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B46.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B46.png used on i
-nput line 352.
+nput line 359.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B31.png' not found on
- input line 363.
+ input line 370.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B31.png, id=78, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B31.png, id=79, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B31.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B31.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B31.png used on i
-nput line 363.
+nput line 370.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B32.png' not found on
- input line 368.
+ input line 375.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B32.png, id=79, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B32.png, id=80, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B32.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B32.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B32.png used on i
-nput line 368.
+nput line 375.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B33.png' not found on
- input line 373.
+ input line 380.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B33.png, id=80, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B33.png, id=81, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B33.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B33.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B33.png used on i
-nput line 373.
+nput line 380.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B34.png' not found on
- input line 378.
+ input line 385.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B34.png, id=81, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B34.png, id=82, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B34.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B34.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B34.png used on i
-nput line 378.
+nput line 385.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B35.png' not found on
- input line 383.
+ input line 390.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B35.png, id=82, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B35.png, id=83, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B35.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B35.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B35.png used on i
-nput line 383.
+nput line 390.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_graphs/B36.png' not found on
- input line 388.
+ input line 395.
 
-<"../Miniprojet 2.0/Part B/B_2_graphs/B36.png, id=83, 578.16pt x 433.62pt>
+<"../Miniprojet 2.0/Part B/B_2_graphs/B36.png, id=84, 578.16pt x 433.62pt>
 File: "../Miniprojet 2.0/Part B/B_2_graphs/B36.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_2_graphs/B36.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_graphs/B36.png used on i
-nput line 388.
+nput line 395.
 (pdftex.def)             Requested size: 163.89162pt x 122.91472pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_N_3_graph_2.png' not found on 
-input line 410.
+input line 417.
 
-<"../Miniprojet 2.0/Part B/B_N_3_graph_2.png, id=86, 421.575pt x 316.18124pt>
+<"../Miniprojet 2.0/Part B/B_N_3_graph_2.png, id=87, 421.575pt x 316.18124pt>
 File: "../Miniprojet 2.0/Part B/B_N_3_graph_2.png Graphic file (type png)
 
 <use "../Miniprojet 2.0/Part B/B_N_3_graph_2.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_N_3_graph_2.png used on in
-put line 410.
+put line 417.
 (pdftex.def)             Requested size: 179.2555pt x 134.4452pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_3_bifurcation.png' not found o
-n input line 420.
+n input line 427.
 
 
-<"../Miniprojet 2.0/Part B/B_3_bifurcation.png, id=87, 421.575pt x 316.18124pt>
+<"../Miniprojet 2.0/Part B/B_3_bifurcation.png, id=88, 421.575pt x 316.18124pt>
 File: "../Miniprojet 2.0/Part B/B_3_bifurcation.png Graphic file (type png)
 <use "../Miniprojet 2.0/Part B/B_3_bifurcation.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_3_bifurcation.png used on 
-input line 420.
+input line 427.
 (pdftex.def)             Requested size: 153.64644pt x 115.23392pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png' not found
- on input line 426.
+ on input line 433.
 
 
-<"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png, id=88, 421.575pt x 316.18124p
+<"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png, id=89, 421.575pt x 316.18124p
 t>
 File: "../Miniprojet 2.0/Part B/B_3_bifurcation_2.png Graphic file (type png)
  <use "../Miniprojet 2.0/Part B/B_3_bifurcation_2.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_3_bifurcation_2.png used o
-n input line 426.
+n input line 433.
 (pdftex.def)             Requested size: 153.64644pt x 115.23392pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.png' 
-not found on input line 432.
+not found on input line 439.
 
 
-<"../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.png, id=89, 421.575pt x 3
+<"../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.png, id=90, 421.575pt x 3
 16.18124pt>
 File: "../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.png Graphic file (ty
 pe png)
  <use "../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.p
-ng used on input line 432.
+ng used on input line 439.
 (pdftex.def)             Requested size: 153.64644pt x 115.23392pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/100cells/100cells0_0.png' not fo
-und on input line 444.
+und on input line 451.
 
 
-<"../Miniprojet 2.0/Part B/100cells/100cells0_0.png, id=90, 1028.34187pt x 490.
+<"../Miniprojet 2.0/Part B/100cells/100cells0_0.png, id=91, 1028.34187pt x 490.
 83376pt>
 File: "../Miniprojet 2.0/Part B/100cells/100cells0_0.png Graphic file (type png
 )
  <use "../Miniprojet 2.0/Part B/100cells/100cells0_0.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/100cells/100cells0_0.png use
-d on input line 444.
+d on input line 451.
 (pdftex.def)             Requested size: 230.46576pt x 109.99843pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/100cells/100cells0_5.png' not fo
-und on input line 449.
+und on input line 456.
 
 
-<"../Miniprojet 2.0/Part B/100cells/100cells0_5.png, id=91, 1028.34187pt x 490.
+<"../Miniprojet 2.0/Part B/100cells/100cells0_5.png, id=92, 1028.34187pt x 490.
 83376pt>
 File: "../Miniprojet 2.0/Part B/100cells/100cells0_5.png Graphic file (type png
 )
  <use "../Miniprojet 2.0/Part B/100cells/100cells0_5.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/100cells/100cells0_5.png use
-d on input line 449.
+d on input line 456.
 (pdftex.def)             Requested size: 230.46576pt x 109.99843pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/100cells/100cells1_0.png' not fo
-und on input line 454.
+und on input line 461.
 
 
-<"../Miniprojet 2.0/Part B/100cells/100cells1_0.png, id=92, 1028.34187pt x 490.
+<"../Miniprojet 2.0/Part B/100cells/100cells1_0.png, id=93, 1028.34187pt x 490.
 83376pt>
 File: "../Miniprojet 2.0/Part B/100cells/100cells1_0.png Graphic file (type png
 )
  <use "../Miniprojet 2.0/Part B/100cells/100cells1_0.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/100cells/100cells1_0.png use
-d on input line 454.
+d on input line 461.
 (pdftex.def)             Requested size: 230.46576pt x 109.99843pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/100cells/100cells1_5a.png' not f
-ound on input line 459.
+ound on input line 466.
 
 
-<"../Miniprojet 2.0/Part B/100cells/100cells1_5a.png, id=93, 1028.34187pt x 490
+<"../Miniprojet 2.0/Part B/100cells/100cells1_5a.png, id=94, 1028.34187pt x 490
 .83376pt>
 File: "../Miniprojet 2.0/Part B/100cells/100cells1_5a.png Graphic file (type pn
 g)
  <use "../Miniprojet 2.0/Part B/100cells/100cells1_5a.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/100cells/100cells1_5a.png us
-ed on input line 459.
+ed on input line 466.
 (pdftex.def)             Requested size: 230.46576pt x 109.99843pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part B/100cells/100cells1_5b.png' not f
-ound on input line 464.
+ound on input line 471.
 
 
-<"../Miniprojet 2.0/Part B/100cells/100cells1_5b.png, id=94, 1028.34187pt x 490
+<"../Miniprojet 2.0/Part B/100cells/100cells1_5b.png, id=95, 1028.34187pt x 490
 .83376pt>
 File: "../Miniprojet 2.0/Part B/100cells/100cells1_5b.png Graphic file (type pn
 g)
  <use "../Miniprojet 2.0/Part B/100cells/100cells1_5b.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part B/100cells/100cells1_5b.png us
-ed on input line 464.
+ed on input line 471.
 (pdftex.def)             Requested size: 230.46576pt x 109.99843pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part C/C_2_figure_1.png' not found on i
-nput line 480.
+nput line 487.
 
 
-<"../Miniprojet 2.0/Part C/C_2_figure_1.png, id=95, 1028.34187pt x 490.83376pt>
+<"../Miniprojet 2.0/Part C/C_2_figure_1.png, id=96, 1028.34187pt x 490.83376pt>
 File: "../Miniprojet 2.0/Part C/C_2_figure_1.png Graphic file (type png)
 <use "../Miniprojet 2.0/Part C/C_2_figure_1.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part C/C_2_figure_1.png used on inp
-ut line 480.
+ut line 487.
 (pdftex.def)             Requested size: 512.14963pt x 244.45761pt.
 
 
 LaTeX Warning: File `"../Miniprojet 2.0/Part C/C_2_figure_2.png' not found on i
-nput line 485.
+nput line 492.
 
 
-<"../Miniprojet 2.0/Part C/C_2_figure_2.png, id=96, 1028.34187pt x 490.83376pt>
+<"../Miniprojet 2.0/Part C/C_2_figure_2.png, id=97, 1028.34187pt x 490.83376pt>
 File: "../Miniprojet 2.0/Part C/C_2_figure_2.png Graphic file (type png)
 <use "../Miniprojet 2.0/Part C/C_2_figure_2.png>
 Package pdftex.def Info: "../Miniprojet 2.0/Part C/C_2_figure_2.png used on inp
-ut line 485.
+ut line 492.
 (pdftex.def)             Requested size: 512.14963pt x 244.45761pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 491.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 498.
  [2
 
 ] [3 <./sketch.png> <../Miniprojet 2.0/Part A/A11.png (PNG copy)> <../Miniproje
@@ -1752,54 +1764,55 @@ iniprojet 2.0/Part A/A_3_graphs/A-A2.png (PNG copy)> <../Miniprojet 2.0/Part A/
 A_3_graphs/A-A3.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-A4.png (
 PNG copy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-A6.png (PNG copy)> <../Minipr
 ojet 2.0/Part A/A_3_graphs/A-A8.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_g
-raphs/A-A10.png (PNG copy)> <../Miniprojet 2.0/Part A/Bifurcation.png (PNG copy
-)> <../Miniprojet 2.0/Part A/Bifurcation10000.png (PNG copy)>] [5 <../Miniproje
-t 2.0/Part A/A_3_graphs/A-AA0.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_gra
-phs/A-AA1.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-AA2.png (PNG c
-opy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-AA3.png (PNG copy)> <../Miniprojet
- 2.0/Part A/A_3_graphs/A-AA4.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_grap
-hs/A-AA6.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-AA7.png (PNG co
-py)> <../Miniprojet 2.0/Part A/A_3_graphs/A-AA10.png (PNG copy)> <../Miniprojet
- 2.0/Part A/A2.png (PNG copy)>] [6 <./sketch2.png> <../Miniprojet 2.0/Part B/B_
-2_graphs/B21.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B22.png (PNG 
-copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B23.png (PNG copy)> <../Miniprojet 
-2.0/Part B/B_2_graphs/B24.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/
-B25.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B26.png (PNG copy)>] [
-7 <../Miniprojet 2.0/Part B/B_2_graphs/B11.png (PNG copy)> <../Miniprojet 2.0/P
-art B/B_2_graphs/B12.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B13.p
-ng (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B14.png (PNG copy)> <../Min
-iprojet 2.0/Part B/B_2_graphs/B15.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2
-_graphs/B16.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B41.png (PNG c
-opy)> <../Miniprojet 2.0/Part B/B_2_graphs/B42.png (PNG copy)> <../Miniprojet 2
-.0/Part B/B_2_graphs/B43.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B
-44.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B45.png (PNG copy)> <..
-/Miniprojet 2.0/Part B/B_2_graphs/B46.png (PNG copy)>] [8 <../Miniprojet 2.0/Pa
-rt B/B_2_graphs/B31.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B32.pn
-g (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B33.png (PNG copy)> <../Mini
-projet 2.0/Part B/B_2_graphs/B34.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_
-graphs/B35.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B36.png (PNG co
-py)> <../Miniprojet 2.0/Part B/B_N_3_graph_2.png (PNG copy)>] [9 <../Miniprojet
- 2.0/Part B/B_3_bifurcation.png (PNG copy)> <../Miniprojet 2.0/Part B/B_3_bifur
-cation_2.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.p
-ng (PNG copy)> <../Miniprojet 2.0/Part B/100cells/100cells0_0.png (PNG copy)> <
-../Miniprojet 2.0/Part B/100cells/100cells0_5.png (PNG copy)> <../Miniprojet 2.
-0/Part B/100cells/100cells1_0.png (PNG copy)> <../Miniprojet 2.0/Part B/100cell
-s/100cells1_5a.png (PNG copy)> <../Miniprojet 2.0/Part B/100cells/100cells1_5b.
-png (PNG copy)>] [10 <../Miniprojet 2.0/Part C/C_2_figure_1.png (PNG copy)> <..
-/Miniprojet 2.0/Part C/C_2_figure_2.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 491.
+raphs/A-A10.png (PNG copy)>] [5 <../Miniprojet 2.0/Part A/Bifurcation.png (PNG 
+copy)> <../Miniprojet 2.0/Part A/Bifurcation10000.png (PNG copy)>] [6 <../Minip
+rojet 2.0/Part A/A_3_graphs/A-AA0.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3
+_graphs/A-AA1.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-AA2.png (P
+NG copy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-AA3.png (PNG copy)> <../Minipr
+ojet 2.0/Part A/A_3_graphs/A-AA4.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_
+graphs/A-AA6.png (PNG copy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-AA7.png (PN
+G copy)> <../Miniprojet 2.0/Part A/A_3_graphs/A-AA10.png (PNG copy)> <../Minipr
+ojet 2.0/Part A/A2.png (PNG copy)> <../Miniprojet 2.0/Part A/periodogram.png (P
+NG copy)>] [7 <./sketch2.png> <../Miniprojet 2.0/Part B/B_2_graphs/B21.png (PNG
+ copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B22.png (PNG copy)> <../Miniprojet
+ 2.0/Part B/B_2_graphs/B23.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs
+/B24.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B25.png (PNG copy)> <
+../Miniprojet 2.0/Part B/B_2_graphs/B26.png (PNG copy)>] [8 <../Miniprojet 2.0/
+Part B/B_2_graphs/B11.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B12.
+png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B13.png (PNG copy)> <../Mi
+niprojet 2.0/Part B/B_2_graphs/B14.png (PNG copy)> <../Miniprojet 2.0/Part B/B_
+2_graphs/B15.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B16.png (PNG 
+copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B41.png (PNG copy)> <../Miniprojet 
+2.0/Part B/B_2_graphs/B42.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/
+B43.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B44.png (PNG copy)> <.
+./Miniprojet 2.0/Part B/B_2_graphs/B45.png (PNG copy)> <../Miniprojet 2.0/Part 
+B/B_2_graphs/B46.png (PNG copy)>] [9 <../Miniprojet 2.0/Part B/B_2_graphs/B31.p
+ng (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B32.png (PNG copy)> <../Min
+iprojet 2.0/Part B/B_2_graphs/B33.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2
+_graphs/B34.png (PNG copy)> <../Miniprojet 2.0/Part B/B_2_graphs/B35.png (PNG c
+opy)> <../Miniprojet 2.0/Part B/B_2_graphs/B36.png (PNG copy)> <../Miniprojet 2
+.0/Part B/B_N_3_graph_2.png (PNG copy)>] [10 <../Miniprojet 2.0/Part B/B_3_bifu
+rcation.png (PNG copy)> <../Miniprojet 2.0/Part B/B_3_bifurcation_2.png (PNG co
+py)> <../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.png (PNG copy)> <../M
+iniprojet 2.0/Part B/100cells/100cells0_0.png (PNG copy)> <../Miniprojet 2.0/Pa
+rt B/100cells/100cells0_5.png (PNG copy)> <../Miniprojet 2.0/Part B/100cells/10
+0cells1_0.png (PNG copy)> <../Miniprojet 2.0/Part B/100cells/100cells1_5a.png (
+PNG copy)> <../Miniprojet 2.0/Part B/100cells/100cells1_5b.png (PNG copy)>] [11
+ <../Miniprojet 2.0/Part C/C_2_figure_1.png (PNG copy)> <../Miniprojet 2.0/Part
+ C/C_2_figure_2.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 498.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 491.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 491.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 498.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 498.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: C48EDDF28F137A435C5AE609C6E79AD3;270.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 491.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 498.
  ) 
 Here is how much of TeX's memory you used:
- 27169 strings out of 493673
- 641052 string characters out of 3141523
- 836232 words of memory out of 3000000
- 30001 multiletter control sequences out of 15000+200000
+ 27175 strings out of 493673
+ 641257 string characters out of 3141523
+ 838232 words of memory out of 3000000
+ 30005 multiletter control sequences out of 15000+200000
  9966 words of font info for 36 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,13n,77p,1162b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1819,9 +1832,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (10 pages, 2516229 bytes).
+Output written on report.pdf (11 pages, 2533135 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 348 words of extra memory for PDF output out of 10000 (max. 10000000)
 
