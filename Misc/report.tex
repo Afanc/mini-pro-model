@@ -396,24 +396,34 @@
 
     \begin{figure*}
     \centering
-	\begin{subfigure}[b]{0.3\textwidth}
+	    \begin{subfigure}[b]{0.35\textwidth}
+	    \begin{equation*}R = \frac{\langle F^2 \rangle - {\langle F \rangle}^2}{\frac{1}{N}\sum_{i=1}^{N}(\langle V_i^2 \rangle - {\langle V_i \rangle}^2)} \end{equation*}
+	    \hfill \\
+	    \centering
+	    \footnotesize{The Coefficient of Synchronization R is - obviously - a measure of the synchronisation between $N$ different cells. This ratio can take any value between 0 and 1 as the variance of $F$ cannot exceed the mean value of the individual variances of $V_i$. \\
+	    $R=1$ means very high synchronisation rate as $R=0$ means no synchronisation at all.}
+	    \captionsetup{labelformat=empty}
+	    \caption{\hfill \\ \hfill \\ \hfill \\} 	%ok this is freaking lame
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.35\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_N_3_graph_2.png}
-	    \caption{$R$ vs $K$}
+	    \caption{\footnotesize{Value of $R$ depending on the Coupling Constant K}}
 	\end{subfigure}
-
-	\begin{subfigure}[b]{0.3\textwidth}
+	
+	\begin{subfigure}[b]{0.35\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation.png}
-	    \caption{$K=0.0$}
+	    \caption{eeeh}
 	\end{subfigure}
 	~ 
-	\begin{subfigure}[b]{0.3\textwidth}
+	\begin{subfigure}[b]{0.35\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png}
-	    \caption{$K=0.3$}
+	    \caption{eeeh}
 	\end{subfigure}
 	~ 
-	\caption{raraara}
+	\caption{The Coupling Constant $K$ has an impact on the synchronisation of the population. \\
+	We observe that $K> 0.5$ \red{or high ?} has a disastrous effect on both cells cycles. The reason for this is that the positive feedback loop has high sensitivity and tends to overload concentrations of $Z_i$ which in turn inhibit any production of $X_i$.}
     \end{figure*}
-
 
     \begin{figure*}
     \centering
