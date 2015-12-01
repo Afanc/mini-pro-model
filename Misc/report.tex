@@ -419,19 +419,19 @@
 	\begin{subfigure}[b]{0.3\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation.png}
 	    \caption{$\lambda_1=1$ $\lambda_2=1.15$ \\
-	    and initial conditions $X_0=0~Y_0=0~Z_0=3~V_0=0$}
+	    and initial conditions $X_{i,0}=0~Y_{i,0}=0~Z_{i,0}=3~V_0={i,0}$}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{0.3\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png}
 	    \caption{$\lambda_1=1$ $\lambda_2=1.5$ \\
-	    and initial conditions $X_0=0~Y_0=0~Z_0=3~V_0=0$}
+	    and initial conditions $X_{i,0}=0~Y_{i,0}=0~Z_{i,0}=3~V_0={i,0}$}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}[b]{0.3\textwidth}
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.png}
 	    \caption{$\lambda_1=1$ $\lambda_2=1.15$ \\
-	    and initial conditions $X_0=0~Y_0=0~Z_0=0~V_0=0$}
+	    and initial conditions $X_{i,0}=0~Y_{i,0}=0~Z_{i,0}=0~V_{i,0}=0$}
 	\end{subfigure}
 
 	\caption{Bifurcation diagram in a two-cells Model $X_{min}$ and $X_{max}$ plotted at time intervals $[9/10; 1]$ of $h_{max}=2000$h. We observe that if $K>$ a threshold value and if the difference in the periods of the two cells is high enough, the circadian behaviour of both cells dies. The reason for this is that the positive feedback loop has high sensitivity and tends to overload concentrations of $Z_i$ which in turn inhibit any production of $X_i$. This behaviour is further noticeable when the initial conditions are far from those of their limit cycles, as the cells enter tighter limit cycles ($\Delta X_{(c)} < \Delta X_{(a)}$)}
@@ -465,11 +465,9 @@
 	    \caption{$K=1.5$}
 	\end{subfigure}
 
-	\caption{$X_i(t)$ trajectories in a 100-Cells Model with $K=0$ ($\leftrightarrow$ no coupling)\\
-100 Cells}
+	\caption{$X_i(t)$ trajectories in a 100-Cells Model with initial conditions $X_{i,0}=0~Y_{i,0}=0~Z_{i,0}=3~V_{i,0}=0$ and $\lambda_i \sim N(0, 0.05)$}
     \end{figure*}
 
-    \newpage
 
     \begin{figure*}[!htb] 		%oh my god this is so ugly pls don't look at me
 	\captionsetup{labelformat=empty}
