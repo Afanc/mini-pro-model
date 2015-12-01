@@ -410,20 +410,33 @@
 	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_N_3_graph_2.png}
 	    \caption{\footnotesize{Value of $R$ depending on the Coupling Constant K}}
 	\end{subfigure}
-	
-	\begin{subfigure}[b]{0.35\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation.png}
-	    \caption{eeeh}
-	\end{subfigure}
-	~ 
-	\begin{subfigure}[b]{0.35\textwidth}
-	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png}
-	    \caption{eeeh}
-	\end{subfigure}
-	~ 
-	\caption{The Coupling Constant $K$ has an impact on the synchronisation of the population. \\
-	We observe that $K> 0.5$ \red{or high ?} has a disastrous effect on both cells cycles. The reason for this is that the positive feedback loop has high sensitivity and tends to overload concentrations of $Z_i$ which in turn inhibit any production of $X_i$.}
+	\caption{We introduce the Coefficient of Synchronization R \\
+	Its plot is quite unusual (because of the irregularity of the curve), but this might only be an effect of the limited timescale of the computation. We except this curve to be smooth in reality. \red{this is shitty caption}}
     \end{figure*}
+
+    \begin{figure*}
+    \centering
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation.png}
+	    \caption{$\lambda_1=1$ $\lambda_2=1.15$ \\
+	    and initial conditions $X_0=0~Y_0=0~Z_0=3~V_0=0$}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_3_bifurcation_2.png}
+	    \caption{$\lambda_1=1$ $\lambda_2=1.5$ \\
+	    and initial conditions $X_0=0~Y_0=0~Z_0=3~V_0=0$}
+	\end{subfigure}
+	~ 
+	\begin{subfigure}[b]{0.3\textwidth}
+	    \includegraphics[width=\textwidth]{"../Miniprojet 2.0/Part B/B_2_marginally_less_stupid.png}
+	    \caption{$\lambda_1=1$ $\lambda_2=1.15$ \\
+	    and initial conditions $X_0=0~Y_0=0~Z_0=0~V_0=0$}
+	\end{subfigure}
+
+	\caption{Bifurcation diagram in a two-cells Model $X_{min}$ and $X_{max}$ plotted at time intervals $[9/10; 1]$ of $h_{max}=2000$h. We observe that if $K>$ a threshold value and if the difference in the periods of the two cells is high enough, the circadian behaviour of both cells dies. The reason for this is that the positive feedback loop has high sensitivity and tends to overload concentrations of $Z_i$ which in turn inhibit any production of $X_i$. This behaviour is further noticeable when the initial conditions are far from those of their limit cycles, as the cells enter tighter limit cycles ($\Delta X_{(c)} < \Delta X_{(a)}$)}
+	\end{figure*}
+
 
     \begin{figure*}
     \centering
