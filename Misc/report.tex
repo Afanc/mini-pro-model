@@ -287,7 +287,7 @@
 	\end{subfigure}
 
 	\caption{\red{$X_1(t)$} and \blue{$X_2(t)$} trajectories in a two-cells Model with $K=0$ ($\leftrightarrow$ no coupling)\\
-	Figure (a) has both signals perfectly aligned. We observe no synchronisation, as excepted.}
+	Figure (a) has both signals perfectly aligned. We observe no synchronisation, as expected These figures mainly serve to show whether the signals are in or out of phase, to help interpret figure 11 more easily.}
     \end{figure*}
 
 
@@ -324,7 +324,7 @@
 	\end{subfigure}
 
 	\caption{$X_1$ and $X_2$ trajectories with varying $\lambda_i$ in a two-cells Model with $K=0$\\
-	Figure (a), the control, makes perfect sense since the two cells have the same period, hence the exact same signal. With unequal periods, the limit cycles of both cells aren't in phase and form these '8' patterns. The fluctuations at the beginning of trajectories come from the inner adjustment of the cells (see Figure \ref{fig:6}). The box that appears represent the variation of $X_1$ and $X_2$ and therefore directly gives us their minimal and maximal values. (f) gives us \red{weird shit ?}\red{what can we say bout (f) ?}}
+	Figure (a), the control, makes perfect sense since the two cells have the same period, hence the exact same signal. With unequal periods, the limit cycles of both cells aren't in phase and form these '8' patterns. The fluctuations at the beginning of trajectories come from the inner adjustment of the cells (see Figure \ref{fig:6}). The sides of the rectangles that appear represent the variation of $X_1$ and $X_2$  between their minimal and maximal values and receiving a rectangle shows us that we reach a limit cycle. (f) gives us a different pattern due to the two periods being a multiple of each other. We expect the phase difference not to vary greatly over time, as in the other figures. }
 	\label{fig:11}
     \end{figure*}
     
@@ -360,8 +360,8 @@
 	    \caption{$\lambda_1$ = 1, $\lambda_2$ = 2 [$h^{-1}$]}
 	\end{subfigure}
 
-	\caption{\orange{$X_1(t)$} and \blue{$Y_2(t)$} trajectories in a two-cells Model with $K=0$ \\
-	We observe no synchronisation, as excepted. \red{nothing else to say ? :(}}
+	\caption{\orange{$X_1(t)$} and \blue{$Y_2(t)$} trajectories in a two-cells Model with $K=0$ (no synchronisation). The key observation to make here is that the signal of Y(t) is always slightly delayed to X(t).\\
+	}
     \end{figure*}
 
     \begin{figure*}
@@ -397,7 +397,7 @@
 	\end{subfigure}
 
 	\caption{$X_1$ and $Y_2$ trajectories with varying $\lambda_i$ in a two-cells Model with $K=0$\\
-	Once again, both cells tend to reach their limit cycles without any kind of interaction. The same observations as in Figure \ref{fig:11} can be made.
+	Once again, both cells tend to reach their limit cycles without any kind of interaction. The same observations as in Figure \ref{fig:11} can be made, except for the key difference in figure (a), where the fact that the two cells share the same period but are partially out of phase creates a limit cycle instead of a linear interaction.
 	}
     \end{figure*}
 
@@ -407,8 +407,8 @@
 	    \begin{equation*}R = \frac{\langle F^2 \rangle - {\langle F \rangle}^2}{\frac{1}{N}\sum_{i=1}^{N}(\langle V_i^2 \rangle - {\langle V_i \rangle}^2)} \end{equation*}
 	    \hfill \\
 	    \centering
-	    \footnotesize{The Coefficient of Synchronization R is - obviously - a measure of the synchronisation between $N$ different cells. This ratio can take any value between 0 and 1 as the variance of $F$ cannot exceed the mean value of the individual variances of $V_i$. \\
-	    $R=1$ means very high synchronisation rate as $R=0$ means no synchronisation at all.}
+	    \footnotesize{The Coefficient of Synchronization R is as the name suggests a measure of the synchronisation between $N$ different cells. This ratio can take any value between 0 and 1 as the variance of $F$ cannot exceed the mean value of the individual variances of $V_i$. \\
+	    $R=1$ means very high synchronisation whereas $R=0$ means no synchronisation at all.}
 	    \captionsetup{labelformat=empty}
 	    \caption{\hfill \\ \hfill \\ \hfill \\} 	%ok this is freaking lame
 	\end{subfigure}
@@ -418,7 +418,7 @@
 	    \caption{\footnotesize{Value of $R$ depending on the Coupling Constant K}}
 	\end{subfigure}
 	\caption{We introduce the Coefficient of Synchronization R \\
-	Its plot is quite unusual (because of the irregularity of the curve), but this might only be an effect of the limited timescale of the computation. We except this curve to be smooth in reality. \red{this is shitty caption}}
+	The plot shows some irregularity, but shows a clear trend. The higher the strength of the signal of V is (denoted by the factor K), the more the cells begin to oscillate in synchronisation.}
     \end{figure*}
 
     \begin{figure*}
