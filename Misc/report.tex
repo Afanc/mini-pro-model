@@ -33,7 +33,7 @@
 \title{\huge{\textbf{Mini-Project in Mathematical and Computational Modeling}}\\
 	\vspace{0.5cm}
 	\Large{\textit{\'Ecole Polytechnique F\'ed\'erale de Lausanne, Switzerland}}}
-\author{\large{Florian + Dariush}}
+\author{\large{Florian Wyler + Dariush Mollet}}
 \twocolumn[{
     \centering
     \huge{\textbf{Mini-Project in Mathematical and Computational Modeling}} \\
@@ -49,9 +49,8 @@
     \hfill \\
     In the following url you can find the collection of .gif files that we made to show the evolution of X in all N cells over time. \\
     \url{https://github.com/Afanc/mini-pro-model/tree/Florian/Miniprojet\%202.0/Part\%20C} \\
-    In C\_2\_gif\_1 until C\_2\_gif\_6 we see the evolution of the complexity of our system. The titles in the .gif files give the indication as to what part of the model was added. A is the reference to the correlation matrix between the cells. Lambda refers to the multiplier of the period. N is the number of cells
-
-
+    In C\_2\_gif\_1 until C\_2\_gif\_6 we see the evolution of the complexity of our system. The titles in the .gif files give the indication as to what part of the model was added. A is the reference to the correlation matrix between the cells. Lambda refers to the multiplier of the period. \\
+    N is the number of cells simulated. A gradient of lambdas is introduced to emulate wave-like propagation of the signal in the SCN. In the last two heat maps, we simulate synhcronisation between he two halves of the SCN, with no connection between the wo at first and different base periods to see if they could synchcronise of they were out of sync. In the second one there is a very strong connection between the two halves, and synchronisation takes place again. \\
 
     \begin{figure*}[!htb] 		%oh my god this is so ugly pls don't look at me
 	\captionsetup{labelformat=empty}
@@ -478,7 +477,11 @@
 	    \caption{$K=1.5$}
 	\end{subfigure}
 
+<<<<<<< HEAD
 	\caption{$X_i(t)$ trajectories in a 100-Cells Model with initial conditions $X_{i,0}=0~Y_{i,0}=0~Z_{i,0}=3~V_{i,0}=0$ and $\lambda_i \sim N(0, 0.05)$. As excepted, with no coupling the cells are unable to synchronize leading to the loss of the signal in (a). Furthermore, with increasing $K$ the population synchronizes in 2-5 periods and in a decreasing period length pattern \red{u know talk english?}.}
+=======
+	\caption{$X_i(t)$ trajectories in a 100-Cells Model with initial conditions $X_{i,0}=0~Y_{i,0}=0~Z_{i,0}=3~V_{i,0}=0$ and $\lambda_i \sim N(1, 0.05)$. As expected, with no coupling the cells are unable to synchronize leading to the loss of the signal in (a). Furthermore, with increasing $K$ the population synchronizes in longer periods. But the higher the strength of the inter-cellular signal, the more synchronisation we observe.}
+>>>>>>> 809c9f3a9aeb4d696bbdbcc8e482f223ebf1fc9d
     \end{figure*}
 
 
